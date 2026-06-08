@@ -12,6 +12,7 @@ subtitle = "一个人的独白"
 description = "一个人的独白"
 enableGiscus = false
 disableDarkmode = false
+walineServer = "https://c.winegrower.cn/"
 
 [markup]
   [markup.highlight]
