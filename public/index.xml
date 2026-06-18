@@ -2,57 +2,78 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>墨家Mojia</title>
-    <link>https://www.mojia.org/</link>
+    <link>https://mojia.org/</link>
     <description>Recent content on 墨家Mojia</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 02 Apr 2026 22:50:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 22 Apr 2026 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://www.mojia.org/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://mojia.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+        <item>
+        <title>最近在折腾电脑</title>
+        <link>https://mojia.org/posts/computer/</link>
+        <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://mojia.org/posts/computer/</guid>
+        <description>墨家Mojia https://mojia.org/posts/computer/ -&lt;p&gt;我本职是学习食品行业的，和IT行业并无直接关联。不过，从本科时代起，我就一直是个喜欢“玩”、乐于“折腾”的人。&lt;/p&gt;
+&lt;p&gt;只是，随着年龄增长，工作与生活的各种羁绊接踵而至，那份纯粹的玩心，似乎也被尘封了不少。&lt;/p&gt;
+&lt;p&gt;好在，最近AI的兴起，像一束光，让我重新找回了那种久违的快乐。AI有种奇妙的魔力，它仿佛给像我这样的普通人，增添了一层“技能加持”的错觉——虽然只是错觉，但那种感觉真的很爽，很舒服。&lt;/p&gt;
+&lt;p&gt;前几天我还在玩Openclaw，后来又迷上了Hermes。经过这一个月的深度体验，我清晰地意识到：AI Agent（人工智能代理）将会长久地伴随我的工作和生活，我已经离不开它了。&lt;/p&gt;
+&lt;p&gt;这个发现甚至动摇了我对电脑系统的固有认知。我使用Windows系统已超过十年，过去虽偶有烦躁，但习惯的力量让我从未想过改变。直到最近，随着AI Agent使用频率的增加，我开始意识到，或许Mac或Linux系统才是与AI更完美契合的选择。&lt;/p&gt;
+&lt;p&gt;但我的电脑刚买不久，实在不便再添置一台MacBook。于是，在一番犹豫之后，4月20日，我做出了一个大胆的决定：卸载Windows系统，安装Linux（Ubuntu）。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://wineshe.oss-cn-shanghai.aliyuncs.com/winegrower/2026/04/22/Screenshot%20From%202026-04-22%2017-40-08.png&#34; alt=&#34;Screenshot From 2026-04-22 17-40-08.png&#34;&gt;
+&lt;img src=&#34;https://wineshe.oss-cn-shanghai.aliyuncs.com/winegrower/2026/04/22/Screenshot%20From%202026-04-22%2017-40-39.png&#34; alt=&#34;Screenshot From 2026-04-22 17-40-39.png&#34;&gt;
+&lt;img src=&#34;https://wineshe.oss-cn-shanghai.aliyuncs.com/winegrower/2026/04/22/Screenshot%20From%202026-04-22%2017-40-56.png&#34; alt=&#34;Screenshot From 2026-04-22 17-40-56.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;现在，呈现在眼前的是全新的视觉界面，是全新的操作逻辑。特别是与AI的深度融合，让很多操作变得异常轻松。&lt;/p&gt;
+&lt;p&gt;目前，我已经成功安装了中文输入法、微信、飞书、LibreOffice以及Hermes Agent。对于轻办公和日常的“折腾”乐趣来说，这套组合已经完全够用，甚至超出了我的预期。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://wineshe.oss-cn-shanghai.aliyuncs.com/winegrower/2026/04/22/Screenshot%20From%202026-04-22%2017-22-26.png&#34; alt=&#34;Screenshot From 2026-04-22 17-22-26.png&#34;&gt;&lt;/p&gt;- https://mojia.org/posts/computer/ - </description>
+        </item>
     
     
     
         <item>
         <title>重要而敏感的话题</title>
-        <link>https://www.mojia.org/posts/%E9%87%8D%E8%A6%81%E8%80%8C%E6%95%8F%E6%84%9F%E7%9A%84%E8%AF%9D%E9%A2%98/</link>
+        <link>https://mojia.org/posts/%E9%87%8D%E8%A6%81%E8%80%8C%E6%95%8F%E6%84%9F%E7%9A%84%E8%AF%9D%E9%A2%98/</link>
         <pubDate>Thu, 02 Apr 2026 22:50:00 +0800</pubDate>
         
-        <guid>https://www.mojia.org/posts/%E9%87%8D%E8%A6%81%E8%80%8C%E6%95%8F%E6%84%9F%E7%9A%84%E8%AF%9D%E9%A2%98/</guid>
-        <description>墨家Mojia https://www.mojia.org/posts/%E9%87%8D%E8%A6%81%E8%80%8C%E6%95%8F%E6%84%9F%E7%9A%84%E8%AF%9D%E9%A2%98/ -&lt;p&gt;今天晚饭后,我们仨坐在客厅聊天,因为今天提前还了一笔房贷,聊天的内容自然就涉及到了对我们每个人而言重要而敏感的话题。&lt;/p&gt;
+        <guid>https://mojia.org/posts/%E9%87%8D%E8%A6%81%E8%80%8C%E6%95%8F%E6%84%9F%E7%9A%84%E8%AF%9D%E9%A2%98/</guid>
+        <description>墨家Mojia https://mojia.org/posts/%E9%87%8D%E8%A6%81%E8%80%8C%E6%95%8F%E6%84%9F%E7%9A%84%E8%AF%9D%E9%A2%98/ -&lt;p&gt;今天晚饭后,我们仨坐在客厅聊天,因为今天提前还了一笔房贷,聊天的内容自然就涉及到了对我们每个人而言重要而敏感的话题。&lt;/p&gt;
 &lt;p&gt;我家孩子是2020年出生的。因为孩子要上学,我们在2021年买了房。当时采用组合贷,商业贷款133万,公积金贷款50万。从2022年3月开始,我就彻底变成了&amp;quot;房奴&amp;quot;。&lt;/p&gt;
 &lt;p&gt;众所周知,对普通人而言,买房可能是人生中最大的一笔支出,特别是在这个时代,但我们别无选择。不过如何减少顶层设计对我们的剥削,我们想到了一个途径——提前还款。对普通人来说,这比投资更有收益。&lt;/p&gt;
 &lt;p&gt;从2022年3月至2026年3月,我总共还了商业贷款121万,其中本金106万、利息15万,目前还剩本金27万。以后每月利息约600元。听到这里,我稍微松了口气——即使将来这27万不再提前还款,我在房子上额外支付的利息也不会超过1万。&lt;/p&gt;
 &lt;p&gt;这个规则很恐怖,恐怖之处在于越没钱的人,还款利息越高；越是刚买完房、越是在没积蓄的前几年,我们的利息负担越重。这个话题是那么重要,因为很多人的黄金年龄都被房子捆绑；但又那么敏感,因为不涉及顶层设计,只涉及个人隐私。&lt;/p&gt;
 &lt;p&gt;希望我们都可以在这个社会安稳度日,平安快乐。&lt;/p&gt;
-&lt;p&gt;谨以此文记录作为房奴的我。&lt;/p&gt;
-- https://www.mojia.org/posts/%E9%87%8D%E8%A6%81%E8%80%8C%E6%95%8F%E6%84%9F%E7%9A%84%E8%AF%9D%E9%A2%98/ - </description>
+&lt;p&gt;谨以此文记录作为房奴的我。&lt;/p&gt;- https://mojia.org/posts/%E9%87%8D%E8%A6%81%E8%80%8C%E6%95%8F%E6%84%9F%E7%9A%84%E8%AF%9D%E9%A2%98/ - </description>
         </item>
     
     
     
         <item>
         <title>偶尔的闲暇时光</title>
-        <link>https://www.mojia.org/posts/occasional-leisure-time/</link>
+        <link>https://mojia.org/posts/occasional-leisure-time/</link>
         <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://www.mojia.org/posts/occasional-leisure-time/</guid>
-        <description>墨家Mojia https://www.mojia.org/posts/occasional-leisure-time/ -&lt;p&gt;2026年3月27日下午,因工作原因来到房山区长阳镇（五环外）,由于下午工作之前有一个线上会议要参加,我在附近找了一家麦当劳,距离开会还有一段时间,所以我有了一点自己的时间,或许是因为工作日,又或许是因为距离商业区较远,该处停车位充足,大厅宽敞,虽是中午,客人却不多。&lt;/p&gt;
+        <guid>https://mojia.org/posts/occasional-leisure-time/</guid>
+        <description>墨家Mojia https://mojia.org/posts/occasional-leisure-time/ -&lt;p&gt;2026年3月27日下午,因工作原因来到房山区长阳镇（五环外）,由于下午工作之前有一个线上会议要参加,我在附近找了一家麦当劳,距离开会还有一段时间,所以我有了一点自己的时间,或许是因为工作日,又或许是因为距离商业区较远,该处停车位充足,大厅宽敞,虽是中午,客人却不多。&lt;/p&gt;
 &lt;p&gt;我找了一处靠窗的座位坐下,点了一杯咖啡,习惯性地打开电脑,激活我的&amp;quot;龙虾&amp;quot;……&lt;/p&gt;
 &lt;p&gt;我突然感觉到一种久违的放松感,这种场景好像在哪里见过？没有拥挤的人群,没有喧闹的噪音,难得的清闲——再次证明我是一个喜欢安静的人。等我房贷还完了,我可能得换一种生活方式了。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.mojia.org/images/winegrower/2026/03/27/outside.png&#34; alt=&#34;窗外&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.mojia.org/images/winegrower/2026/03/27/inside.png&#34; alt=&#34;窗内&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.mojia.org/images/winegrower/2026/03/27/20260327152150_1015_3.jpg&#34; alt=&#34;窗外&#34;&gt;&lt;/p&gt;- https://www.mojia.org/posts/occasional-leisure-time/ - </description>
+&lt;p&gt;&lt;img src=&#34;https://mojia.org/images/winegrower/2026/03/27/outside.png&#34; alt=&#34;窗外&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://mojia.org/images/winegrower/2026/03/27/inside.png&#34; alt=&#34;窗内&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://mojia.org/images/winegrower/2026/03/27/20260327152150_1015_3.jpg&#34; alt=&#34;窗外&#34;&gt;&lt;/p&gt;- https://mojia.org/posts/occasional-leisure-time/ - </description>
         </item>
     
     
     
         <item>
         <title>永久的博客</title>
-        <link>https://www.mojia.org/posts/%E6%B0%B8%E4%B9%85%E7%9A%84%E5%8D%9A%E5%AE%A2/</link>
+        <link>https://mojia.org/posts/%E6%B0%B8%E4%B9%85%E7%9A%84%E5%8D%9A%E5%AE%A2/</link>
         <pubDate>Wed, 25 Mar 2026 11:02:00 +0800</pubDate>
         
-        <guid>https://www.mojia.org/posts/%E6%B0%B8%E4%B9%85%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid>
-        <description>墨家Mojia https://www.mojia.org/posts/%E6%B0%B8%E4%B9%85%E7%9A%84%E5%8D%9A%E5%AE%A2/ -&lt;p&gt;大多数人,最起码是我本人,都希望自己的个人博客可以永久保存,不因为网络环境的变化而丢失。这也是我在 2013 年创建个人独立博客时的初衷之一,因为无论 QQ 空间还是新浪博客,最终都会随着平台的没落而导致数据丢失。&lt;/p&gt;
+        <guid>https://mojia.org/posts/%E6%B0%B8%E4%B9%85%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid>
+        <description>墨家Mojia https://mojia.org/posts/%E6%B0%B8%E4%B9%85%E7%9A%84%E5%8D%9A%E5%AE%A2/ -&lt;p&gt;大多数人,最起码是我本人,都希望自己的个人博客可以永久保存,不因为网络环境的变化而丢失。这也是我在 2013 年创建个人独立博客时的初衷之一,因为无论 QQ 空间还是新浪博客,最终都会随着平台的没落而导致数据丢失。&lt;/p&gt;
 &lt;p&gt;我不在乎自己的博客有多少人关注,因为这里本来就是给自己生活的记录；如果需要运营,只需要分享一个链接就可以了。&lt;/p&gt;
 &lt;p&gt;就这样,我的独立博客从 2013 年一直坚持到了 2026 年。但随着&amp;quot;AI 时代的到来&amp;quot;,我开始重新思考一个问题：什么样的博客更可以长久保存？什么样的博客更适合 AI 时代？&lt;/p&gt;
 &lt;p&gt;或许答案已经指向了&amp;quot;静态博客&amp;quot;：&lt;/p&gt;
@@ -60,178 +81,107 @@
 &lt;p&gt;&lt;strong&gt;兼容性强&lt;/strong&gt;：即使将来技术再怎么发展,静态博客也不用考虑运行环境及服务器适应的问题,在任何技术环境下都可以正常发布,防止自己精心编排的文章因为切换平台而造成乱码。（最近折腾一个老网站,让我深刻体验到了这点。）&lt;/p&gt;
 &lt;p&gt;综上,我越来越青睐静态博客,特别是基于 Hugo 程序的静态博客。当然,现在面临一个问题：我现有博客的数据（包括文章和评论互动）很难完全转移到静态博客上。如果强行切换,反而会造成另一种形式的&amp;quot;丢失&amp;quot;和折腾。&lt;/p&gt;
 &lt;p&gt;不知道未来会怎样。或许过一段时间,我还会一直坚持现在的博客；又或许再过一段时间,我会花些时间进行一次大转移。&lt;/p&gt;
-&lt;p&gt;谁知道呢？&lt;/p&gt;- https://www.mojia.org/posts/%E6%B0%B8%E4%B9%85%E7%9A%84%E5%8D%9A%E5%AE%A2/ - </description>
+&lt;p&gt;谁知道呢？&lt;/p&gt;- https://mojia.org/posts/%E6%B0%B8%E4%B9%85%E7%9A%84%E5%8D%9A%E5%AE%A2/ - </description>
         </item>
     
     
     
         <item>
         <title>以后得早睡</title>
-        <link>https://www.mojia.org/posts/yi-hou-de-zao-shui/</link>
+        <link>https://mojia.org/posts/yi-hou-de-zao-shui/</link>
         <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://www.mojia.org/posts/yi-hou-de-zao-shui/</guid>
-        <description>墨家Mojia https://www.mojia.org/posts/yi-hou-de-zao-shui/ -&lt;p&gt;因为最近在玩AI,导致熬夜成为常态。&lt;/p&gt;
+        <guid>https://mojia.org/posts/yi-hou-de-zao-shui/</guid>
+        <description>墨家Mojia https://mojia.org/posts/yi-hou-de-zao-shui/ -&lt;p&gt;因为最近在玩AI,导致熬夜成为常态。&lt;/p&gt;
 &lt;p&gt;但今天媳妇要求,强烈要求,必须在23.00前入睡。&lt;/p&gt;
 &lt;p&gt;看看时间,已经23.09了,得睡了~&lt;/p&gt;
-- https://www.mojia.org/posts/yi-hou-de-zao-shui/ - </description>
-        </item>
-    
-    
-    
-        <item>
-        <title>Burgundy勃艮第拼图的片段</title>
-        <link>https://www.mojia.org/posts/burgundy-pin-tu-de-pian-duan/</link>
-        <pubDate>Mon, 23 Mar 2026 00:00:00 +0000</pubDate>
-        
-        <guid>https://www.mojia.org/posts/burgundy-pin-tu-de-pian-duan/</guid>
-        <description>墨家Mojia https://www.mojia.org/posts/burgundy-pin-tu-de-pian-duan/ -&lt;p&gt;台湾林裕森在书中写道：&amp;ldquo;勃艮第像是一面有关美味的大拼图,有101个AOC法定产区,33个特级葡萄园、572个一级葡萄园,以及四千多家葡萄酒庄。勃艮第是一个充满荆棘与陷阱,却又随时随处有着迷人佳酿的葡萄酒国度。有关勃艮第村庄、葡萄园与酒庄的书写是场无止境的探险与无止境的发现,所以,任何想要窥看勃艮第全貌的企图也都终将失败。但是,无论如何,身为勃艮第的无悔酒迷,我已拼出一张属于自己的勃艮第葡萄酒地图。&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;上面是林大师勃艮第葡萄酒一书的文摘,不过,作为读者的我,几乎可以肯定是拼不完勃艮第这张地图了。但也要无悔一下,只言片语,有多少算多少啦！&lt;/p&gt;
-&lt;p&gt;参加完RR的89年份酒会,当晚在Simon的介绍下,买回了Vincent Girardin Meursault Village Vieilles Vignes 2008与Corton Grand Cru Perrières 2006各一瓶,一起参加的友人也拷贝我的酒单买了他家的酒。第二天的周日立即打开了那瓶2008的梅索村级老藤,就已经初会了凡桑吉拉丹Vincent Girardin。Simon讲不久还要办他家的品酒会,当即就向少爷定了座位。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.mojia.org/images/winegrower/2010/11/2010113021411812.jpg&#34; alt=&#34;Vincent Girardin&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Vincent Girardin最近,他家的白酒在市场上表现的很热闹,Parker给他家打了四颗星。以下这段文字摘自一家香港酒商酒庄介绍：&amp;ldquo;凡桑（Vincent）是吉拉丹（Girardin）家族第11代的葡萄酒业者。他既拥有精妙的酿酒技术,也对葡萄酒充满激情,过去10年来他一直积极地发展他的酒商公司。大约1年前,他买下了亨利•克拉克酒厂（Domaine Henri Clerc）。加上之前的地产,他现在一共持有25公顷的葡萄园,其中包括位于布里尼蒙哈榭（Puligny Montrachet）、夏莎妮蒙哈榭（Chassange Montrachet）、默尔索（Meursault）的大量一级酒园（Premier Cru）地块,以及科尔登查理曼（Corton Charlemagne）、骑士蒙哈榭（Chevalier Montrachet）的特级酒园（Grand Cru）。除了质量非凡的白葡萄酒之外,他的勃艮第红酒同样不容错过。&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;买回的那瓶2006 Corton &amp;ldquo;Perrières&amp;quot;还没机会开,终于迎来了Vincent Girardin品酒会。除了会温习一下梅索村老藤,酒单最后一款即这06 Corton Perrières,好好试试。RR当晚酒会的酒单,三白三红：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.mojia.org/images/winegrower/2010/11/2010113021423011.jpg&#34; alt=&#34;酒单&#34;&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Vincent Girardin Meursault Village Vieilles Vignes 2008&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Vincent Girardin Chassagne-Montrachet Vieilles Vignes 2007&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Vincent Girardin Corton Charlemagne Grand Cru 2007&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Vincent Girardin Pommard Village Les Vignots 2008&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Vincent Girardin Chassagne-Montrachet 1er Cru La Boudriotte 2007&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Vincent Girardin Corton Grand Cru Perrières 2006&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;嘉宾酒庄销售经理马克做了演讲,老爷Joe亲任翻译。马克介绍了酒庄起源,以及一些基本情况,如：手工采摘挑选,气动式压榨机榨汁。酒都是自然酵母,温控发酵,30&lt;del&gt;60%法国木桶桶陈16&lt;/del&gt;18月,不澄清,不过滤,直接装瓶。&lt;/p&gt;
-&lt;h3 id=&#34;meursault-village-vieilles-vignes-2008&#34;&gt;Meursault Village Vieilles Vignes 2008&lt;/h3&gt;
-&lt;p&gt;矿石、柑桔、spice,入口饱满,矿石感微苦回味,木桶香的结尾。温度上升后该酒会变得圆润。马克自豪地介绍说欧洲许多米其林餐厅酒单常用此酒。&lt;/p&gt;
-&lt;h3 id=&#34;chassagne-montrachet-vieilles-vignes-2007&#34;&gt;Chassagne-Montrachet Vieilles Vignes 2007&lt;/h3&gt;
-&lt;p&gt;清新矿石、蕨类、苹果,入口清瘦、高酸,20分钟后变平衡些。&lt;/p&gt;
-&lt;h3 id=&#34;corton-charlemagne-grand-cru-2007&#34;&gt;Corton Charlemagne Grand Cru 2007&lt;/h3&gt;
-&lt;p&gt;大名鼎鼎啊,RP 91+,JR 16.5,珍贵量少,他家只拥有0.6公顷地。淡金黄色,闻香：矿石、柠檬、柑桔、烤面包,入口饱满,甜感,香草水果混合体。好喝,香气一直在变化,相信Corton Charlemagne平衡的酒体还一定会有蕴藏变幻的神奇,可是,酒不够啊。事后问Joe还有存货,回答早就卖完了！下面图片就是著名的Corton Charlemagne山。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.mojia.org/images/winegrower/2010/11/2010113021432242.jpg&#34; alt=&#34;Corton Charlemagne&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;pommard-village-les-vignots-2008&#34;&gt;Pommard Village Les Vignots 2008&lt;/h3&gt;
-&lt;p&gt;轮到红酒上场,Pommard村的这块地面积也不大,04公顷。落杯：野樱桃、动物气味,入口酸度高,中长的结尾。相对简单的酒,马克说法语Pommard其实是指果园的意思。&lt;/p&gt;
-&lt;h3 id=&#34;chassagne-montrachet-1er-cru-la-boudriotte-2007&#34;&gt;Chassagne-Montrachet 1er Cru La Boudriotte 2007&lt;/h3&gt;
-&lt;p&gt;65年的老藤。一开始,酒有些Close,入口甜感、圆润,单宁充沛,中长的结束。20分钟后也散发着野野樱桃的果味,但酒体不够集中。&lt;/p&gt;
-&lt;h3 id=&#34;grand-cru-perrières-2006&#34;&gt;Grand Cru Perrières 2006&lt;/h3&gt;
-&lt;p&gt;初闻立刻体会到香气复杂,有深度,黑色水果、甜美、spice,入口初甜,中后段强大的单宁,酸度,结构力度大,收结非常悠长。&lt;/p&gt;
-&lt;p&gt;品酒同时,马克大谈生物动力学酿酒甚至喝酒。葡萄有机种植大家似乎好理解一些,科学发展嘛。但是对于生物动力学酿酒已经玄之又玄,这下喝酒还要生物动力,谁搞得清？一年365个日子都给分为花日、叶日、果日与根日四大类,也算一种法国式的酿酒与喝酒阴历。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.mojia.org/images/winegrower/2010/11/2010113021455934.jpg&#34; alt=&#34;生物动力学&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&amp;ldquo;不管你喜欢与否,月亮对我们行为有影响。在月盈（从新月到满月）,植物的活力增加。在接近满月,植物能够更好地对抗病虫害。在残月（满月到新月）,情况正好相反,植物的活力降低。&amp;ldquo;这个算我理解了吧。但是,关于花日、叶日、果日与根日,肯定一头雾水。初想想,也就是花日宜喝白葡萄酒,果日宜喝红葡萄酒,叶日诸事不宜。至于根日,我说不清楚。相信与否,大家有兴趣自己来做试验吧。&lt;/p&gt;
-&lt;p&gt;呵呵,首先希望有人出版该阴历卖给酒迷。&lt;/p&gt;- https://www.mojia.org/posts/burgundy-pin-tu-de-pian-duan/ - </description>
-        </item>
-    
-    
-    
-        <item>
-        <title>折腾10年前的网站</title>
-        <link>https://www.mojia.org/posts/che-teng-10-nian-qian-de-wang-zhan/</link>
-        <pubDate>Sun, 22 Mar 2026 00:00:00 +0000</pubDate>
-        
-        <guid>https://www.mojia.org/posts/che-teng-10-nian-qian-de-wang-zhan/</guid>
-        <description>墨家Mojia https://www.mojia.org/posts/che-teng-10-nian-qian-de-wang-zhan/ -&lt;p&gt;虽然我做独立博客有些年头了,但鉴于技术有限,起初我是用虚拟主机搭建的。随着需求增加,我在 2016 年 5 月购买了服务器。那时工作尚不繁忙,经过一番折腾,我成功部署了几个主要网站,并在源代码基础上做了不少修改。&lt;/p&gt;
-&lt;p&gt;自 2018 年起,我便很少再调整网站架构,重心转到了写博客、写文章上。本着&amp;quot;能用就将就&amp;quot;的原则,就这样相安无事地度过了八年。对于本就非技术出身的我而言,这八年里,那些技术细节忘得更多了。&lt;/p&gt;
-&lt;p&gt;但这几天,在 AI 热潮的&amp;quot;怂恿&amp;quot;下,我重新燃起了折腾网站的念头。起初只是想调整一个站点,结果一发不可收拾,把四个网站全部梳理了一遍。甚至最后萌生了卸载宝塔面板、彻底清理服务器,直接将网站部署在原生环境中的想法。&lt;/p&gt;
-&lt;p&gt;于是,我雄心勃勃地开始了这场&amp;quot;大基建&amp;quot;。不折腾不知道,一折腾才发现,八年前搭建的网站宛如&amp;quot;破房子&amp;quot;,一旦拆除,想要复原难如登天。原程序早在几年前就已停更（官网也关了）,难以适应当下的 Web 环境；而我的网站虽鲜有流量,却因运营了近十年,实在不舍得关停。&lt;/p&gt;
-&lt;p&gt;在折腾的过程中心态也随之变化,从最初追求的&amp;quot;焕然一新&amp;quot;,降级为只求&amp;quot;起死回生&amp;quot;。最后在经过一阵折腾后,终于恢复了网站 95% 以上的功能,才心有所安。&lt;/p&gt;
-&lt;p&gt;当然,这个过程看似波折,但在波折之余,我仿佛隐隐回到了2016年前后搭建网站的日子,找回了那个精力旺盛、勇于拼搏、对事业满怀热忱的自己。&lt;/p&gt;
-&lt;p&gt;或许再过几年,我的网站会显得更加古老,但我会一直保留它。它就像一本旧书,正是因为它的&amp;quot;旧&amp;quot;,才散发着属于那个时代的、年轻的气息。&lt;/p&gt;
-&lt;p&gt;最后附加两张我网站的图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.mojia.org/images/winegrower/2026/03/22/cbb4ae8cjw1faadeez9eaj212a0hsgsr.jpg&#34; alt=&#34;网站截图1&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.mojia.org/images/winegrower/2026/03/22/ScreenShot_2026-03-22_121506_729.png&#34; alt=&#34;网站截图2&#34;&gt;&lt;/p&gt;- https://www.mojia.org/posts/che-teng-10-nian-qian-de-wang-zhan/ - </description>
+- https://mojia.org/posts/yi-hou-de-zao-shui/ - </description>
         </item>
     
     
     
         <item>
         <title>Openclaw发布测试</title>
-        <link>https://www.mojia.org/posts/openclaw-fa-bu-ce-shi/</link>
+        <link>https://mojia.org/posts/openclaw-fa-bu-ce-shi/</link>
         <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://www.mojia.org/posts/openclaw-fa-bu-ce-shi/</guid>
-        <description>墨家Mojia https://www.mojia.org/posts/openclaw-fa-bu-ce-shi/ -&lt;p&gt;本文章为测试文章,是通过openclaw发布的,如果成功,这将是我用openclaw发布的第一篇文章。今天第一次尝试用Openclaw来写博客,感觉非常新奇。Openclaw是一个AI助手,可以通过对话的方式帮我完成各种任务,比如写文章、发邮件、管理文件等。&lt;/p&gt;
+        <guid>https://mojia.org/posts/openclaw-fa-bu-ce-shi/</guid>
+        <description>墨家Mojia https://mojia.org/posts/openclaw-fa-bu-ce-shi/ -&lt;p&gt;本文章为测试文章,是通过openclaw发布的,如果成功,这将是我用openclaw发布的第一篇文章。今天第一次尝试用Openclaw来写博客,感觉非常新奇。Openclaw是一个AI助手,可以通过对话的方式帮我完成各种任务,比如写文章、发邮件、管理文件等。&lt;/p&gt;
 &lt;p&gt;作为一名技术爱好者,我一直在探索如何更高效地工作。Openclaw的出现让我看到了AI在日常办公中的巨大潜力。只需要通过简单的对话,就能完成原本需要复杂操作的任务,这种体验是革命性的。&lt;/p&gt;
 &lt;p&gt;在这个信息爆炸的时代,如何高效地管理和输出信息变得越来越重要。借助AI工具,我们可以把更多时间花在思考和创新上,而不是繁琐的重复劳动上。&lt;/p&gt;
 &lt;p&gt;这篇测试文章虽然简短,但它标志着一个新开始——用AI辅助创作的新尝试。&lt;/p&gt;
-- https://www.mojia.org/posts/openclaw-fa-bu-ce-shi/ - </description>
-        </item>
-    
-    
-    
-        <item>
-        <title>2026年春节假期旅行</title>
-        <link>https://www.mojia.org/posts/2026-spring-festival-trip/</link>
-        <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate>
-        
-        <guid>https://www.mojia.org/posts/2026-spring-festival-trip/</guid>
-        <description>墨家Mojia https://www.mojia.org/posts/2026-spring-festival-trip/ -&lt;p&gt;2026年的春节假期比以往更久了一些,也成为了一年中最长的假期,所以经过沟通,三人准备利用这个假期来一个&amp;quot;长旅行&amp;quot;。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;2月14日：北京 → 泰安&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;下午从北京出发,为规避高速拥堵及费用,途中策略性休息2小时。凌晨顺利抵达泰安,为次日登山养精蓄锐。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;2月15日：慢游泰山&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;因为有小朋友,所以选了天外村乘大巴→ 中天门 → 缆车→ 南天门 → 玉皇顶 → 南天门 → 步行 → 中天门 → 天外村乘大巴的省力模式攀登泰山,体验泰山神韵和节日氛围。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.mojia.org/images/winegrower/2026/02/28/IMG_20260216_095717.jpg&#34; alt=&#34;泰山&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;2月16日：岱庙怀古 → 滕州访墨 → 徐州夜宿&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;上午游览岱庙,午后送妻子到泰安高铁站,乘高铁返京值班。随后我与孩子Cici驱车前往徐州,途经墨子故里滕州时,卡点参观了墨子纪念馆。晚间入住徐州。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.mojia.org/images/winegrower/2026/02/28/IMG_20260216_163033.jpg&#34; alt=&#34;岱庙或滕州&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;2月17日：徐州 → 南京（家庭团聚）&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;晨起前往南京,重点游览南京红山森林动物园,因为初一当天,动物园人不是很多,享受高质量亲子时光。晚上在南京南站接结束值班从北京返程的妻子,全家团聚并入住南京。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.mojia.org/images/winegrower/2026/02/28/IMG_20260217_154106.jpg&#34; alt=&#34;南京红山森林动物园&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;2月18日：南京 → 苏州（古城夜色）&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;上午从南京出发抵达苏州,下午泛舟游览苏州护城河及盘门景区；夜晚漫步平江路,体验苏州老城的水乡韵味。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.mojia.org/images/winegrower/2026/02/28/IMG_20260218_154938.jpg&#34; alt=&#34;苏州护城河或盘门景区&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;2月19日：苏州园林与人流挑战&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;上午参观虎丘公园；下午游览留园,虽遇客流高峰仍坚持看完；晚间因山塘街游客过于密集,遂返回酒店休息。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.mojia.org/images/winegrower/2026/02/28/IMG_20260219_154130.jpg&#34; alt=&#34;苏州留园&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;2月20日：周庄水乡 → 绍兴老街&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;上午游览周庄古镇。下午驱车赶往绍兴,当晚游览仓桥直街历史街区,感受绍兴夜景。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.mojia.org/images/winegrower/2026/02/28/IMG_20260220_100555.jpg&#34; alt=&#34;周庄古镇&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;2月21日：绍兴人文之旅&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;上午参观鲁迅故里（客流极大）；下午探访&amp;quot;鲁镇&amp;quot;景区,感觉商业化较重,体验略逊预期；晚上转战安昌古镇,这里浓厚的生活气息和年味令人印象深刻,成为当日亮点。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.mojia.org/images/winegrower/2026/02/28/IMG_20260221_185420.jpg&#34; alt=&#34;绍兴安昌古镇&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;2月22日：绍兴 → 杭州（良渚文明）→ 返程中途&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;上午参观杭州良渚博物院,探寻文明曙光。下午正式开启返程,夜间宿于山东沂源县。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.mojia.org/images/winegrower/2026/02/28/IMG_20260222_121614.jpg&#34; alt=&#34;良渚博物院&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;2月23日：沂源 → 北京&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;清晨出发,一路向北,于下午14:00安全抵家,圆满结束此次春节长途旅行。&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;这次春节旅行,我们用了10天时间,驱车行驶了3000公里,一路经过并游览了9个城市。&lt;/p&gt;
-&lt;p&gt;说实话,因为正赶上春节假期,不管是景点还是路上,到处都是人山人海。单看游玩体验,确实不算太好,特别是像江南水乡这种本该慢下来、静静欣赏的地方,被拥挤的人流破坏了不少意境。&lt;/p&gt;
-&lt;p&gt;但转念一想,对于我们这些只有假期才能出门的人来说,只要&amp;quot;在路上&amp;quot;,其实就是一种对工作的逃离和身心的充电。&lt;/p&gt;
-&lt;p&gt;尤其是对我们一家三口来说,北京的家是家,外面的车和酒店也是家。一家人在一起,经历过山水,穿过人群,有过惊喜,也有过小小的失落——这些共同经历的点点滴滴,本身就是最难忘的生活体验,比风景更重要。&lt;/p&gt;
-&lt;p&gt;具体每个城市的旅行,所有空,再单独记录。&lt;/p&gt;- https://www.mojia.org/posts/2026-spring-festival-trip/ - </description>
+- https://mojia.org/posts/openclaw-fa-bu-ce-shi/ - </description>
         </item>
     
     
     
         <item>
         <title>节前的最后一天上班</title>
-        <link>https://www.mojia.org/posts/%E8%8A%82%E5%89%8D%E7%9A%84%E6%9C%80%E5%90%8E%E4%B8%80%E5%A4%A9%E4%B8%8A%E7%8F%AD/</link>
+        <link>https://mojia.org/posts/%E8%8A%82%E5%89%8D%E7%9A%84%E6%9C%80%E5%90%8E%E4%B8%80%E5%A4%A9%E4%B8%8A%E7%8F%AD/</link>
         <pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://www.mojia.org/posts/%E8%8A%82%E5%89%8D%E7%9A%84%E6%9C%80%E5%90%8E%E4%B8%80%E5%A4%A9%E4%B8%8A%E7%8F%AD/</guid>
-        <description>墨家Mojia https://www.mojia.org/posts/%E8%8A%82%E5%89%8D%E7%9A%84%E6%9C%80%E5%90%8E%E4%B8%80%E5%A4%A9%E4%B8%8A%E7%8F%AD/ -&lt;p&gt;节前的最后一天上班&lt;/p&gt;
+        <guid>https://mojia.org/posts/%E8%8A%82%E5%89%8D%E7%9A%84%E6%9C%80%E5%90%8E%E4%B8%80%E5%A4%A9%E4%B8%8A%E7%8F%AD/</guid>
+        <description>墨家Mojia https://mojia.org/posts/%E8%8A%82%E5%89%8D%E7%9A%84%E6%9C%80%E5%90%8E%E4%B8%80%E5%A4%A9%E4%B8%8A%E7%8F%AD/ -&lt;p&gt;节前的最后一天上班&lt;/p&gt;
 &lt;p&gt;过年的氛围越来越浓,大家看似在上班,实际上心已经来到了假期,我也如此。&lt;/p&gt;
 &lt;p&gt;在节前上班的最后一个下午,小朋友来公司附近等我,接我下班。因为有孩子陪伴,为了方便工作,我们一起来到楼下的餐厅,她陪着我工作,我陪她玩耍。&lt;/p&gt;
 &lt;p&gt;平时都是我送她上幼儿园,今天她接我下班。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.mojia.org/images/winegrower/2026/02/13/cici.jpg&#34; alt=&#34;cici&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.mojia.org/images/winegrower/2026/02/13/ScreenShot_2026-02-13_142701_051.png&#34; alt=&#34;截图&#34;&gt;&lt;/p&gt;
-- https://www.mojia.org/posts/%E8%8A%82%E5%89%8D%E7%9A%84%E6%9C%80%E5%90%8E%E4%B8%80%E5%A4%A9%E4%B8%8A%E7%8F%AD/ - </description>
+&lt;p&gt;&lt;img src=&#34;https://mojia.org/images/winegrower/2026/02/13/cici.jpg&#34; alt=&#34;cici&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://mojia.org/images/winegrower/2026/02/13/ScreenShot_2026-02-13_142701_051.png&#34; alt=&#34;截图&#34;&gt;&lt;/p&gt;- https://mojia.org/posts/%E8%8A%82%E5%89%8D%E7%9A%84%E6%9C%80%E5%90%8E%E4%B8%80%E5%A4%A9%E4%B8%8A%E7%8F%AD/ - </description>
         </item>
     
     
     
         <item>
         <title>今年春节不回老家</title>
-        <link>https://www.mojia.org/posts/%E4%BB%8A%E5%B9%B4%E6%98%A5%E8%8A%82%E4%B8%8D%E5%9B%9E%E8%80%81%E5%AE%B6/</link>
+        <link>https://mojia.org/posts/%E4%BB%8A%E5%B9%B4%E6%98%A5%E8%8A%82%E4%B8%8D%E5%9B%9E%E8%80%81%E5%AE%B6/</link>
         <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://www.mojia.org/posts/%E4%BB%8A%E5%B9%B4%E6%98%A5%E8%8A%82%E4%B8%8D%E5%9B%9E%E8%80%81%E5%AE%B6/</guid>
-        <description>墨家Mojia https://www.mojia.org/posts/%E4%BB%8A%E5%B9%B4%E6%98%A5%E8%8A%82%E4%B8%8D%E5%9B%9E%E8%80%81%E5%AE%B6/ -&lt;p&gt;今年春节没有回老家——其实,这已经是连续第六年了。&lt;/p&gt;
+        <guid>https://mojia.org/posts/%E4%BB%8A%E5%B9%B4%E6%98%A5%E8%8A%82%E4%B8%8D%E5%9B%9E%E8%80%81%E5%AE%B6/</guid>
+        <description>墨家Mojia https://mojia.org/posts/%E4%BB%8A%E5%B9%B4%E6%98%A5%E8%8A%82%E4%B8%8D%E5%9B%9E%E8%80%81%E5%AE%B6/ -&lt;p&gt;今年春节没有回老家——其实,这已经是连续第六年了。&lt;/p&gt;
 &lt;p&gt;自从在北京定居后,先是妻子春节值班,接着孩子年幼不便远行,再后来种种琐事牵绊……从2020年起,我们便再没在除夕夜踏上归途。&lt;/p&gt;
 &lt;p&gt;我知道,这些理由说到底都不足以真正&amp;quot;成立&amp;quot;。可渐渐地,不回家过年竟成了一种心照不宣的默契。父母不再问那句熟悉的&amp;quot;今年回不回来？&amp;quot;,电话里的叮嘱也从&amp;quot;早点订票&amp;quot;变成了&amp;quot;你们自己安排好就行&amp;quot;。&lt;/p&gt;
 &lt;p&gt;或许,我真的在不知不觉中,从那个理所当然的&amp;quot;归人&amp;quot;,慢慢变成了故乡眼中的&amp;quot;过客&amp;quot;。&lt;/p&gt;
 &lt;p&gt;儿时记忆里的年味——走亲访友、敬祖拜神、村头拜年、社火喧天、锣鼓戏台——如今已如隔世烟云,离我越来越远。取而代之的,是我们一家三口在城市周边短途旅行,吃顿年夜饭,看场电影,安静又轻松。&lt;/p&gt;
 &lt;p&gt;若问我是否想家？答案毫无疑问：男人对老家的土地,总有一种莫名的执念。每次回去,我都要到地里走一走、转一转。因为在这片土地上,不论春夏秋冬如何轮转,风里永远都飘着年少时奔跑的味道。&lt;/p&gt;
-- https://www.mojia.org/posts/%E4%BB%8A%E5%B9%B4%E6%98%A5%E8%8A%82%E4%B8%8D%E5%9B%9E%E8%80%81%E5%AE%B6/ - </description>
+- https://mojia.org/posts/%E4%BB%8A%E5%B9%B4%E6%98%A5%E8%8A%82%E4%B8%8D%E5%9B%9E%E8%80%81%E5%AE%B6/ - </description>
+        </item>
+    
+    
+    
+        <item>
+        <title>写在2026年初,大变革时代的我们</title>
+        <link>https://mojia.org/posts/%E5%86%99%E5%9C%A82026%E5%B9%B4%E5%88%9D%E5%A4%A7%E5%8F%98%E9%9D%A9%E6%97%B6%E4%BB%A3%E7%9A%84%E6%88%91%E4%BB%AC/</link>
+        <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://mojia.org/posts/%E5%86%99%E5%9C%A82026%E5%B9%B4%E5%88%9D%E5%A4%A7%E5%8F%98%E9%9D%A9%E6%97%B6%E4%BB%A3%E7%9A%84%E6%88%91%E4%BB%AC/</guid>
+        <description>墨家Mojia https://mojia.org/posts/%E5%86%99%E5%9C%A82026%E5%B9%B4%E5%88%9D%E5%A4%A7%E5%8F%98%E9%9D%A9%E6%97%B6%E4%BB%A3%E7%9A%84%E6%88%91%E4%BB%AC/ -&lt;p&gt;不知道,从历史的角度看,2026年会是一个什么样的年份,因为我们都生活在当下,我们很难感知到。&lt;/p&gt;
+&lt;p&gt;但从各种身边的感知和遥远的新闻来看,世界在面临巨大的变革。这种变革或可能是灾难,可能也是机会。&lt;/p&gt;
+&lt;p&gt;好在,我们生活在一个强大而稳定的国家。&lt;/p&gt;
+&lt;p&gt;从身边的感知而言,工作和生活比以往变得更家困难,失业的人越来越多,消费的信心越来越小,赚钱的能力越来越受限,工作变得越来越不确定……&lt;/p&gt;
+&lt;p&gt;更令人不安的是,曾经被视为&amp;quot;铁饭碗&amp;quot;的行业也开始动摇——教育、医疗、金融,甚至公务员系统,都开始感受到技术替代与财政紧缩的双重压力。年轻人不再相信&amp;quot;努力就有回报&amp;quot;,中年人则在房贷、子女教育和父母养老之间疲于奔命。城市里的灯火依旧通明,但许多窗口背后,是沉默的焦虑与无声的挣扎。&lt;/p&gt;
+&lt;p&gt;从遥远的新闻来看,世界秩序在破碎,暴动、冲突、战争……此起彼伏,很多细节都在表明战争可能即将来临,在和平年代长大的我们,从小受到的教育在此时改变了,需要重新学习,重新调整生存规则……&lt;/p&gt;
+&lt;p&gt;中东局势再度紧张,东欧的战线仍未平息,亚太地区的军事演习频率创下历史新高。大国之间的对话越来越少,制裁与反制成了常态。粮食、能源、芯片——这些曾经只是经济术语的词汇,如今频繁出现在国家安全战略的文件里。全球供应链不再是效率优先,而是&amp;quot;安全优先&amp;quot;&amp;ldquo;友岸外包&amp;rdquo;。我们曾以为全球化不可逆转,如今却发现,世界正在悄悄&amp;quot;脱钩&amp;quot;。&lt;/p&gt;
+&lt;p&gt;AI到了质变的临界点,已经越来越多地闯入了我们的生活,被称为&amp;quot;第四次工业革命&amp;quot;,或许将来很多工作会被AI替代,或许AI将来会成为我们生活中不得不学的&amp;quot;基本技能&amp;quot;,AI与电脑、与机器人、与汽车、与手机都在无形中产生各种联系……&lt;/p&gt;
+&lt;p&gt;就在2025年底至2026年初,多个主流AI模型实现了真正的&amp;quot;多模态自主推理&amp;quot;——它们不仅能写文章、画图、编程,还能规划行程、谈判合同、甚至模拟情感互动。一些公司已开始用AI代理代替客服、销售乃至初级管理者。学校里,孩子们用AI做作业、查资料、练口语；职场中,不会用AI工具的人,正被悄然边缘化。有人欢呼这是解放生产力的曙光,也有人担忧：当机器比人更&amp;quot;懂&amp;quot;人,我们还剩下什么不可替代的价值？&lt;/p&gt;
+&lt;p&gt;对于处于大变革中的个人,往往会有些迷茫,有些疯狂,有些恐惧,有些担忧……&lt;/p&gt;
+&lt;p&gt;但或许,正是在这种不确定中,才藏着重新定义自己的机会。当旧的路径失效,新的可能性反而浮现。有人开始返乡创业,有人转向手艺与内容创作,有人重拾阅读与思考,在信息洪流中寻找锚点。国家也在加快构建新质生产力、推动共同富裕、强化科技自立——这些宏大的叙事,最终要落在每一个普通人的选择与坚持上。&lt;/p&gt;
+&lt;p&gt;2026年才刚刚开始。历史从不由预言书写,而由行动铸就。我们或许无法掌控时代的浪潮,但至少可以稳住自己的船舵,在风浪中保持清醒、善意与希望。&lt;/p&gt;- https://mojia.org/posts/%E5%86%99%E5%9C%A82026%E5%B9%B4%E5%88%9D%E5%A4%A7%E5%8F%98%E9%9D%A9%E6%97%B6%E4%BB%A3%E7%9A%84%E6%88%91%E4%BB%AC/ - </description>
+        </item>
+    
+    
+    
+        <item>
+        <title>工作给了我们什么</title>
+        <link>https://mojia.org/posts/%E5%B7%A5%E4%BD%9C%E7%BB%99%E4%BA%86%E6%88%91%E4%BB%AC%E4%BB%80%E4%B9%88/</link>
+        <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://mojia.org/posts/%E5%B7%A5%E4%BD%9C%E7%BB%99%E4%BA%86%E6%88%91%E4%BB%AC%E4%BB%80%E4%B9%88/</guid>
+        <description>墨家Mojia https://mojia.org/posts/%E5%B7%A5%E4%BD%9C%E7%BB%99%E4%BA%86%E6%88%91%E4%BB%AC%E4%BB%80%E4%B9%88/ -&lt;p&gt;今天19.30我一路辗转回家,拖着疲惫的身体,推开门,孩子清脆的声音&amp;quot;爸爸,告诉你一个好消息,妈妈给我买指甲贴了,明天就可以到&amp;quot;。妻子在沙发上坐着,看合孩子在客厅玩耍。&lt;/p&gt;
+&lt;p&gt;我放下书包,洗洗洗漱之后,走到餐厅,打开留给我的饭菜,热了饭菜,一个人在餐桌边慢慢吃了起来,以补充这一天身体能量的消耗。&lt;/p&gt;
+&lt;p&gt;我还没有完全吃完饭,妻子走过来,坐在边上,陪我吃饭,陪我聊天。说起了医院发生的故事。说今天有两位病人被她的医术和医德征服,有一位老太太送给了她一副她写的&amp;quot;福&amp;quot;,讲述这位老奶奶在她的治疗下,一天天身体恢复。同时也说了另一位病人,送给了几个橘子,还顺手拨了橘子喂给我。&lt;/p&gt;
+&lt;p&gt;听着妻子今天工作过程中的成就,我看到了她慢慢的成就感,她是一个做事认真的人,当然,医学会反馈任何一位认真医治的医生,所以她经受的病人大多数都会获得良好的反馈,并给她以感激。&lt;/p&gt;
+&lt;p&gt;而再想想我自己,在一个内耗,消耗,PUA,KPI满满的工作氛围中,但好在我知道我自己为了什么,或许我的工作很难有成就但,我唯一的成就感就是为家人养家糊口。&lt;/p&gt;
+- https://mojia.org/posts/%E5%B7%A5%E4%BD%9C%E7%BB%99%E4%BA%86%E6%88%91%E4%BB%AC%E4%BB%80%E4%B9%88/ - </description>
         </item>
     
     
