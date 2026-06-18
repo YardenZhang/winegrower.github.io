@@ -280,6 +280,25 @@ try {
 
 }
 
+// 实时跟随系统主题变化
+if (window.matchMedia) {
+  let colorSchemeQuery = window.matchMedia("(prefers-color-scheme: dark)");
+  colorSchemeQuery.addEventListener("change", function (e) {
+    let cookie = document.cookie.replace(
+      /(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/,
+      "$1"
+    );
+    // 只有用户没有手动设置过 cookie 时才跟随系统
+    if (cookie === "") {
+      if (e.matches && !isDarkMode) {
+        toggleDarkMode();
+      } else if (!e.matches && isDarkMode) {
+        toggleDarkMode();
+      }
+    }
+  });
+}
+
 
 
 // Drawer
