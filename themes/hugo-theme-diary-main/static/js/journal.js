@@ -214,7 +214,7 @@ document.querySelectorAll("table").forEach(function (elem) {
 
 var isDarkMode = false;
 
-var toggleDarkMode = function () {
+var toggleDarkMode = function (saveCookie) {
   let setGiscusTheme = function (themeName) {
     const iframe = document.querySelector('iframe.giscus-frame');
     if (!iframe) return;
@@ -231,13 +231,13 @@ var toggleDarkMode = function () {
   let icon = document.getElementById("darkModeToggleIcon");
   let icon2 = document.getElementById("darkModeToggleIcon2");
   if (isDarkMode == true) {
-    document.cookie = "night=1;path=/";
+    if (saveCookie !== false) document.cookie = "night=1;path=/";
     document.body.classList.add("night");
     icon.innerText = "light_mode";
     icon2.innerText = "light_mode";
     setGiscusTheme("dark");
   } else {
-    document.cookie = "night=0;path=/";
+    if (saveCookie !== false) document.cookie = "night=0;path=/";
     document.body.classList.remove("night");
     icon.innerText = "dark_mode";
     icon2.innerText = "dark_mode";
@@ -255,7 +255,7 @@ if (night == "") {
     window.matchMedia &&
     window.matchMedia("(prefers-color-scheme: dark)").matches
   ) {
-    toggleDarkMode();
+    toggleDarkMode(false);
   }
 } else {
   // If night is not empty
@@ -291,9 +291,9 @@ if (window.matchMedia) {
     // 只有用户没有手动设置过 cookie 时才跟随系统
     if (cookie === "") {
       if (e.matches && !isDarkMode) {
-        toggleDarkMode();
+        toggleDarkMode(false);
       } else if (!e.matches && isDarkMode) {
-        toggleDarkMode();
+        toggleDarkMode(false);
       }
     }
   });
