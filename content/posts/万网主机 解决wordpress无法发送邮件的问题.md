@@ -16,6 +16,7 @@ tags: ["WordPress", "万网", "SMTP"]
 $this->smtp_conn = @stream_socket_client(
 <!--more-->
 $host . ":" . $port,
+
 $errno,
 $errstr,
 $timeout,
