@@ -13,13 +13,13 @@ tags:
 
 最近，为了将博客迁移至Hugo静态站点生成器，我着手对主题进行了一次全面的调整。目标是保持原有风格的同时，使其与Hugo的主题结构相融合。在AI的协助下，我开始了这次博客主题的修改工作。
 
+<!--more-->
+
 以这个为基础，在AI的协助下我开始了我的博客主题修改，这是我的Hugo静态博客：[https://winegrower.cn/](https://winegrower.cn/)。
 
 ## 首先是调整主题整体色调
 
 我的博客Logo是一张在橡木桶前拍摄的照片，因此，新主题的色调围绕着橡木桶温暖的木质色调展开。同时，由于我日常使用Claude Code较多，新主题的色调也参考了Claude，并将博客的默认主题设置为Dark模式，以更好地保护眼睛。
-
-<!--more-->
 
 ![](/images/winegrower/theme-screenshot-01.png)
 ![](/images/winegrower/theme-screenshot-02.png)
