@@ -1,39 +1,26 @@
-<div id="waline" class="waline-container"></div>
-<script>
-(function() {
-    var walineEl = document.getElementById('waline');
-    if (!walineEl) return;
+<div id="waline" class="waline-container" style="position:relative;"></div>
+<style>
+.wl-rss { display: none !important; }
+</style>
 
-    // 从 localStorage 读取主题偏好
-    var saved = localStorage.getItem('theme');
-    var isDark = saved === 'dark';
-    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    var theme = isDark ? 'dark' : (saved === 'light' ? 'light' : (prefersDark ? 'dark' : 'light'));
+<script type="module">
+import { init } from 'https://cdn.jsdelivr.net/npm/@waline/client@3/dist/waline.js';
 
-    // 监听主题切换
-    var observer = new MutationObserver(function() {
-        var isNowDark = document.documentElement.classList.contains('night') ||
-                        (document.documentElement.getAttribute('data-theme') === 'dark');
-        if (typeof Waline !== 'undefined') {
-            Waline.updateWaline();
-        }
-    });
-    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class', 'data-theme'] });
+// 从 localStorage 读取主题
+var saved = localStorage.getItem('theme');
+var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+var isDark = saved === 'dark' || (saved !== 'light' && prefersDark);
 
-    var script = document.createElement('script');
-    script.src = 'https://cdn.jsdelivr.net/npm/@waline/client@3/dist/waline.js';
-    script.onload = function() {
-        Waline.init({
-            el: '#waline',
-            serverURL: '{{ .Site.Params.walineServer | default "https://c.winegrower.cn" }}',
-            lang: 'zh-CN',
-            dark: 'body.night',
-            emoji: ['https://unpkg.com/@waline/emojis@1.2.0/tw-emoji'],
-            requiredMeta: ['nick'],
-            login: 'force',
-            pageSize: 20,
-        });
-    };
-    document.head.appendChild(script);
-})();
+init({
+    el: '#waline',
+    serverURL: '{{ .Site.Params.walineServer | default "https://c.winegrower.cn" }}',
+    lang: 'zh-CN',
+    dark: 'body.night',
+    emoji: ['https://unpkg.com/@waline/emojis@1.2.0/tw-emoji'],
+    requiredMeta: ['nick', 'mail'],
+    meta: ['nick', 'mail', 'link'],
+    login: 'enable',
+    pageSize: 20,
+    reaction: false,
+});
 </script>
