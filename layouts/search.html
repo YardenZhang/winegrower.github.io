@@ -1,14 +1,158 @@
 {{ define "main" }}
-<link rel="stylesheet" href="/pagefind/pagefind-ui.css">
-<div class="post-list-container post-list-container-no-background">
-    <div style="padding: 20px;">
-        <div id="search"></div>
+
+<style>
+/* ===== 搜索页 ===== */
+.search-page { max-width: 700px; margin: 0 auto; padding: 40px 24px 60px; }
+.search-hero { margin-bottom: 40px; }
+.search-hero h1 { font-size: 1.8rem; font-weight: 600; color: var(--winegrower-text, #3d3929); margin: 0 0 6px 0; line-height: 1.3; letter-spacing: -0.01em; }
+.search-hero p { font-size: 0.92rem; color: var(--winegrower-secondary, #8c8577); margin: 0; }
+
+/* 输入框 */
+#search-input {
+    width: 100%; padding: 14px 18px; font-size: 1.05rem; font-family: inherit;
+    border: 2px solid var(--winegrower-border, rgba(194, 113, 79, 0.25)); border-radius: 12px;
+    background: var(--winegrower-card-bg, #fff); color: var(--winegrower-text, #3d3929);
+    outline: none; transition: border-color .2s, box-shadow .2s; -webkit-appearance: none; box-sizing: border-box;
+}
+#search-input:focus { border-color: var(--winegrower-accent, #c2714f); box-shadow: 0 0 0 3px rgba(194, 113, 79, 0.12); }
+#search-input::placeholder { color: #b0a89a; }
+
+.search-stats { color: var(--winegrower-secondary, #8c8577); font-size: .88rem; margin: 20px 0 24px; padding-bottom: 12px; border-bottom: 1px solid var(--winegrower-footer-border, rgba(194, 113, 79, 0.1)); }
+.search-idle, .search-loading, .search-error { text-align: center; color: var(--winegrower-secondary, #8c8577); padding: 60px 0; font-size: .95rem; }
+
+/* 结果卡片 */
+.result-card { padding: 0 0 24px; margin-bottom: 24px; border-bottom: 1px solid var(--winegrower-footer-border, rgba(194, 113, 79, 0.12)); }
+.result-card:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.result-title { margin-bottom: 4px; }
+.result-title a { font-size: 1.1rem; font-weight: 600; color: var(--winegrower-text, #3d3929); text-decoration: none; border: none; line-height: 1.5; }
+.result-title a:hover { color: var(--winegrower-accent, #c2714f); }
+
+.result-meta { font-size: .78rem; color: var(--winegrower-secondary, #8c8577); margin-bottom: 8px; line-height: 1.5; display: flex; flex-wrap: wrap; gap: 0; }
+.result-meta .sep { margin: 0 6px; color: var(--winegrower-footer-border, rgba(194, 113, 79, 0.3)); }
+.result-meta a { color: var(--winegrower-secondary, #8c8577); text-decoration: none; border: none; }
+.result-meta a:hover { color: var(--winegrower-accent, #c2714f); }
+
+.result-excerpt { font-size: .92rem; line-height: 1.8; color: var(--winegrower-text, #3d3929); word-break: break-word; overflow-wrap: break-word; }
+.result-excerpt mark { background-color: rgba(194, 113, 79, 0.22); color: inherit; font-weight: 700; padding: 1px 4px; border-radius: 3px; }
+
+/* 深色 */
+body.night #search-input { background: var(--winegrower-card-bg, #22211e); color: var(--winegrower-text, #d1cec7); border-color: rgba(226, 138, 103, 0.2); }
+body.night #search-input:focus { border-color: var(--winegrower-accent, #e28a67); box-shadow: 0 0 0 3px rgba(226, 138, 103, 0.12); }
+body.night #search-input::placeholder { color: #6b655a; }
+body.night .result-title a { color: var(--winegrower-text, #d1cec7); }
+body.night .result-title a:hover { color: var(--winegrower-accent, #e28a67); }
+body.night .result-excerpt { color: var(--winegrower-text, #d1cec7); }
+body.night .result-excerpt mark { background-color: rgba(226, 138, 103, 0.28); color: inherit; font-weight: 700; }
+body.night .result-card { border-bottom-color: rgba(226, 138, 103, 0.12); }
+body.night .result-meta, body.night .result-meta a { color: var(--winegrower-secondary, #9b9488); }
+body.night .result-meta a:hover { color: var(--winegrower-accent, #e28a67); }
+
+@media (max-width: 600px) {
+    .search-page { padding: 24px 16px 40px; }
+    .search-hero h1 { font-size: 1.4rem; }
+    #search-input { font-size: 1rem; padding: 12px 14px; }
+    .result-title a { font-size: 1rem; }
+    .result-excerpt { font-size: .88rem; }
+}
+</style>
+
+<div class="search-page">
+    <div class="search-hero">
+        <h1>搜索</h1>
+        <p>输入关键词全文搜索</p>
     </div>
+    <input type="text" id="search-input" placeholder="输入关键词..." autocomplete="off" autofocus>
+    <div id="search-stats" class="search-stats"></div>
+    <div id="search-results"></div>
 </div>
-<script src="/pagefind/pagefind-ui.js"></script>
-<script>
-    window.addEventListener('DOMContentLoaded', (event) => {
-        new PagefindUI({ element: "#search", showSubResults: true });
+
+<script type="module">
+import * as pf from '/pagefind/pagefind.js';
+
+const input = document.getElementById('search-input');
+const resultsEl = document.getElementById('search-results');
+const statsEl = document.getElementById('search-stats');
+
+function esc(t) { return (t||'').replace(/[&<>"]/g,function(m){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m];}); }
+
+function render(items) {
+    if (!items || !items.length) {
+        resultsEl.innerHTML = '<div class="search-error">没有找到相关结果</div>';
+        statsEl.textContent = '';
+        return;
+    }
+    statsEl.textContent = '找到 ' + items.length + ' 条结果';
+    var html = '';
+
+    items.forEach(function(item) {
+        var m = item.meta || {};
+        var title = m.title || item.url || '无标题';
+        var url = item.url || '#';
+        var date = m.date || '';
+        var catStr = m.categories || '';
+        var tagStr = m.tags || '';
+        var cats = catStr ? catStr.split('|').filter(Boolean) : [];
+        var tags = tagStr ? tagStr.split('|').filter(Boolean) : [];
+
+        html += '<div class="result-card">';
+        html += '<div class="result-title"><a href="' + url + '">' + esc(title) + '</a></div>';
+
+        var parts = [];
+        if (date) parts.push('<span>' + date + '</span>');
+        if (cats.length) {
+            parts.push('<span><i class="fa-regular fa-folder"></i> ' +
+                cats.map(function(c){return '<a href="/categories/'+encodeURIComponent(c.trim())+'">'+esc(c.trim())+'</a>';}).join(' · ') + '</span>');
+        }
+        if (tags.length) {
+            parts.push('<span>' +
+                tags.map(function(t){return '<a href="/tags/'+encodeURIComponent(t.trim())+'">#'+esc(t.trim())+'</a>';}).join(' ') + '</span>');
+        }
+        if (parts.length) html += '<div class="result-meta">' + parts.join('<span class="sep">|</span>') + '</div>';
+
+        html += '<div class="result-excerpt">' + (item.excerpt || '') + '</div>';
+        html += '</div>';
     });
+
+    resultsEl.innerHTML = html;
+}
+
+async function doSearch(query) {
+    query = query.trim();
+    if (!query || query.length < 2) {
+        resultsEl.innerHTML = '<div class="search-idle">输入关键词开始搜索</div>';
+        statsEl.textContent = '';
+        return;
+    }
+    resultsEl.innerHTML = '<div class="search-loading">搜索中…</div>';
+    statsEl.textContent = '';
+    try {
+        var r = await pf.search(query);
+        if (!r || !r.results || !r.results.length) {
+            resultsEl.innerHTML = '<div class="search-error">没有找到相关结果</div>';
+            statsEl.textContent = '';
+            return;
+        }
+        var items = await Promise.all(r.results.map(function(i){ return i.data(); }));
+        render(items);
+    } catch(e) {
+        resultsEl.innerHTML = '<div class="search-error">搜索出错</div>';
+        console.error(e);
+    }
+}
+
+var debounce = null;
+input.addEventListener('input', function() {
+    if (debounce) clearTimeout(debounce);
+    debounce = setTimeout(function(){ doSearch(input.value); }, 300);
+});
+input.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') { if (debounce) clearTimeout(debounce); doSearch(input.value); }
+});
+resultsEl.innerHTML = '<div class="search-idle">输入关键词开始搜索</div>';
+
+var params = new URLSearchParams(location.search);
+var initQ = params.get('s') || '';
+if (initQ) { input.value = initQ; doSearch(initQ); }
 </script>
+
 {{ end }}

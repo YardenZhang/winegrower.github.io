@@ -1,57 +1,39 @@
-{{ if .Site.Params.walineServer }}
 <div id="waline" class="waline-container"></div>
+<script>
+(function() {
+    var walineEl = document.getElementById('waline');
+    if (!walineEl) return;
 
-<script type="module">
-    import { init } from 'https://cdn.bootcdn.net/ajax/libs/waline/3.0.0/waline.js';
+    // 从 localStorage 读取主题偏好
+    var saved = localStorage.getItem('theme');
+    var isDark = saved === 'dark';
+    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var theme = isDark ? 'dark' : (saved === 'light' ? 'light' : (prefersDark ? 'dark' : 'light'));
 
-    init({
-        el: '#waline',
-        serverURL: '{{ .Site.Params.walineServer }}',
-        lang: '{{ .Site.LanguageCode | default "zh-CN" }}',
-        pageview: true,
-        comment: true,
-        requiredMeta: ['nick', 'mail'],
-        emoji: [
-            'https://cdn.bootcdn.net/ajax/libs/waline/3.0.0/emojis/weibo',
-            'https://cdn.bootcdn.net/ajax/libs/waline/3.0.0/emojis/bilibili'
-        ],
-        search: false,
-        dark: 'html[data-theme="dark"]',
-        path: window.location.pathname,
-        title: document.title,
-    });
-</script>
-
-<style>
-    .waline-container {
-        max-width: 100%;
-        margin-top: 3rem;
-        padding: 0 10px;
-        box-sizing: border-box;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    }
-
-    .waline-comment-content {
-        color: #333 !important;
-        font-size: 15px !important;
-        line-height: 1.6 !important;
-        word-break: break-word !important;
-    }
-
-    [data-theme="dark"] .waline-comment-content {
-        color: #e0e0e0 !important;
-    }
-
-    .waline-comment-body {
-        display: block !important;
-        visibility: visible !important;
-        opacity: 1 !important;
-    }
-
-    @media (max-width: 768px) {
-        .waline-container {
-            padding: 0 5px;
+    // 监听主题切换
+    var observer = new MutationObserver(function() {
+        var isNowDark = document.documentElement.classList.contains('night') ||
+                        (document.documentElement.getAttribute('data-theme') === 'dark');
+        if (typeof Waline !== 'undefined') {
+            Waline.updateWaline();
         }
-    }
-</style>
-{{ end }}
+    });
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class', 'data-theme'] });
+
+    var script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/npm/@waline/client@3/dist/waline.js';
+    script.onload = function() {
+        Waline.init({
+            el: '#waline',
+            serverURL: '{{ .Site.Params.walineServer | default "https://c.winegrower.cn" }}',
+            lang: 'zh-CN',
+            dark: 'body.night',
+            emoji: ['https://unpkg.com/@waline/emojis@1.2.0/tw-emoji'],
+            requiredMeta: ['nick'],
+            login: 'force',
+            pageSize: 20,
+        });
+    };
+    document.head.appendChild(script);
+})();
+</script>

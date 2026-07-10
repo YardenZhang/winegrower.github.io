@@ -1,0 +1,17 @@
+{{ if .Site.Params.sidebarQuote }}
+<div class="sidebar-quote-text">
+    {{ .Site.Params.sidebarQuote }}
+    {{ if .Site.Params.sidebarQuote2 }}
+    <br>{{ .Site.Params.sidebarQuote2 }}
+    {{ end }}
+</div>
+{{ end }}
+&copy;
+{{ if .Site.Copyright }}
+    {{ .Site.Copyright }}
+{{ else }}
+    {{ if .Site.Params.startYear }}
+    {{ .Site.Params.startYear }} -
+    {{ end }}
+    {{ now.Year }} {{ .Site.Title }}
+{{ end }}

@@ -1,0 +1,19 @@
+{{ define "main" }}
+<div class="post-list-container post-list-container-shadow">
+    <div class="post-item-wrapper post-item-wrapper-no-hover">
+        <div class="post-item post-item-no-gaps" style="text-align: center; padding: 120px 20px;">
+            <div class="post-item-info-wrapper">
+                <div class="post-item-title" style="font-size: 72px; color: var(--winegrower-accent);">404</div>
+                <div class="post-item-summary" style="margin-top: 20px; font-size: 18px;">
+                    {{ i18n "404_title" | default "Page not found" }}
+                </div>
+                <div style="margin-top: 30px;">
+                    <a href="{{ "" | absLangURL }}" class="btn btn-outline-secondary">
+                        {{ i18n "404_back" | default "Back to Home" }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}

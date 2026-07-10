@@ -25,40 +25,56 @@ Do not put anything in this file - it's only here so that hugo won't throw an er
     min-height: 200px !important;
 }
 
-/* 导航链接样式 */
-.side-container .nav-link-list .nav-link-item {
-    padding: 0px 28px 0px 30px !important;
-}
-
-/* Logo 图片样式 */
-.nav-title {
-    display: none !important;
-}
-
-.single-column-header-title {
-    display: none !important;
-}
-
-.navbar-brand {
-    font-weight: bold !important;
-}
-
-/* 左侧导航栏下对齐 */
-.nav-link-list {
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: flex-end !important;
-    min-height: 200px !important;
-}
-
-/* 导航链接样式 */
-.side-container .nav-link-list .nav-link-item {
-    padding: 0px 28px 0px 30px !important;
+/* 移动端导航栏横向排列 */
+@media (max-width: 1080px) {
+    .nav-link-list {
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        justify-content: center !important;
+        min-height: unset !important;
+    }
+    .nav-link-list .nav-link-item {
+        display: inline-block !important;
+        padding: 4px 6px !important;
+        background: none !important;
+        font-size: 14px !important;
+    }
+    .nav-link-list .nav-link-item + .nav-link-item::before {
+        content: "·" !important;
+        margin-right: 6px !important;
+        color: var(--winegrower-secondary) !important;
+    }
+    .nav-link-list .nav-link-item:nth-child(2) {
+        display: none !important;
+    }
+    .sidebar-quote {
+        display: none !important;
+    }
+    .site-email,
+    .social-icons {
+        display: none !important;
+    }
+    .single-column-nav-container .nav-content {
+        justify-content: flex-end !important;
+    }
+    .sidebar {
+        border-bottom: 2px solid #7b1c20 !important;
+        margin-bottom: 0 !important;
+    }
+    .post-item-title {
+        text-align: center !important;
+    }
+    .post .post-title {
+        text-align: center !important;
+    }
+    .post .post-meta {
+        text-align: left !important;
+    }
 }
 
 /* TOC 目录字体设置 */
 .toc, .toc * {
-    font-family: "Droid Serif", Georgia, "Times New Roman", Simsun, "宋体", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "WenQuanYi Micro Hei", "Microsoft YaHei", serif !important;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, Simsun, "宋体", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif !important;
     font-size: 13px !important;
 }
 
@@ -99,7 +115,7 @@ body.night .logo-header-img.logo-dark {
 }
 
 .logo-header-img {
-    height: 50px !important;
+    height: 100px !important;
     width: auto !important;
     max-width: none !important;
     display: block !important;
@@ -107,7 +123,7 @@ body.night .logo-header-img.logo-dark {
 }
 
 .logo-sidebar {
-    height: 55px !important;
+    height: 100px !important;
     width: auto !important;
     max-width: none !important;
     display: block !important;
@@ -142,10 +158,12 @@ body.night .logo-header-img.logo-dark {
     font-size: 24px !important;
 }
 
-/* 限制图片宽度 */
-img {
+/* 文章内容图片限制宽度 */
+.post-body img,
+.article-content img,
+.entry-content img {
     max-width: 100% !important;
-    width: 517px !important;
+    width: auto !important;
     height: auto !important;
     display: block !important;
 }
@@ -203,12 +221,17 @@ code {
     overflow-x: auto !important;
     word-break: break-word !important;
     overflow-wrap: break-word !important;
-    white-space: pre-wrap !important;
 }
 
 /* 字体设置 */
 body, .post-body, .article-content, .entry-content, main {
-    font-family: "Droid Serif", Georgia, "Times New Roman", "SimSun", "宋体", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "WenQuanYi Micro Hei", "Microsoft Yahei", serif !important;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, Simsun, "宋体", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif !important;
+}
+
+/* 文章图片宽度100% */
+.post-body img {
+    width: 100% !important;
+    height: auto !important;
 }
 
 /* Waline 基础样式 */

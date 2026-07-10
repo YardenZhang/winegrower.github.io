@@ -10,7 +10,6 @@ tags: ["WeCenter", "二次开发", "PHP", "开源系统"]
 
 1.管理-分类管理
 2.文章、问题、活动列表
-
 3.文章、问题、活动发表时分类选择。
 
 ## 第一部分：后台-分类管理
@@ -143,7 +142,6 @@ $category_id = $this->model('category')->add_category($category_type, $_POST['ti
 
 ```php
 if (TPL::is_output('block/content_nav.tpl.htm', 'question/square'))
-
 {
 TPL::assign('content_nav_menu', $this->model('system')->fetch_category('article'));
 }
@@ -153,7 +151,6 @@ TPL::assign('content_nav_menu', $this->model('system')->fetch_category('article'
 
 ```php
 if (TPL::is_output('block/content_nav.tpl.htm', 'question/square'))
-
 {
 TPL::assign('content_nav_menu', $this->model('system')->fetch_category('question'));
 }

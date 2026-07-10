@@ -1,0 +1,53 @@
+<div id="extraContainer" class="extra-container" data-pagefind-ignore>
+    <div class="toc-wrapper">
+        {{ if and (isset .Site.Params "googlesearchcode") (.IsHome) }}
+        <script async src="https://cse.google.com/cse.js?cx={{ .Site.Params.googleSearchCode }}"></script>
+        <div class="gcse-searchbox-only" mobileLayout="true"></div>
+        {{ end }}
+
+        {{ if and (not (.Params.disableToC)) (.IsPage) }}
+        <div class="toc">
+            {{- partial "toc.html" . -}}
+        </div>
+        {{ end }}
+    </div>
+    <div class="pagination">
+        {{ if not .Site.Params.disableDarkMode }}
+        <a type="button" class="pagination-action" id="darkModeToggleButton">
+            <i class="fa-solid fa-moon pagination-action-icon" id="darkModeToggleIcon"></i>
+        </a>
+        {{ end }}
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top"
+            :class="{ invisible: scrollY == 0 }">
+            <span class="pagination-action-icon">
+                <i class="fa-solid fa-arrow-up"></i>
+            </span>
+        </a>
+        {{ if and (.Page.IsNode) (.Page.Paginator) (not (.Data.Terms)) }}
+        {{ if gt .Paginator.TotalPages 1 }}
+        <a class="pagination-action" {{ if .Paginator.HasPrev }} href="{{ .Paginator.Prev.URL }}">
+            {{ else }}
+            style="visibility:hidden">
+            {{ end }}
+            <span class="pagination-action-icon">
+                <i class="fa-solid fa-chevron-left"></i>
+            </span>
+        </a>
+        <div class="pagination-indicator">
+            <span style="text-align: center">
+                {{ .Paginator.PageNumber }}<br>
+                <div style="display: inline-block; transform: rotate(-28deg)">-</div><br>{{ .Paginator.TotalPages }}
+            </span>
+        </div>
+        <a class="pagination-action" {{ if .Paginator.HasNext }} href="{{ .Paginator.Next.URL }}">
+            {{ else }}
+            style="visibility:hidden">
+            {{ end }}
+            <span class="pagination-action-icon">
+                <i class="fa-solid fa-chevron-right"></i>
+            </span>
+        </a>
+        {{ end }}
+        {{ end }}
+    </div>
+</div>

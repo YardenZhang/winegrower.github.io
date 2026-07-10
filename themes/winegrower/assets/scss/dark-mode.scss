@@ -1,0 +1,207 @@
+/* ============================================
+   winegrower — Dark Mode
+   Luka-inspired warm dark theme
+   ============================================ */
+
+@import "winegrower";
+
+body.night {
+  background: #1a1917;
+  --winegrower-bg: #1a1917;
+  --winegrower-text: #d1cec7;
+  --winegrower-accent: #e28a67;
+  --winegrower-secondary: #9b9488;
+  --winegrower-border: rgba(226, 138, 103, 0.2);
+  --winegrower-shadow: rgba(0, 0, 0, 0.3);
+  --winegrower-social-bg: #22211e;
+  --winegrower-social-text: #d1cec7;
+  --winegrower-footer-border: rgba(226, 138, 103, 0.15);
+  --winegrower-card-bg: #22211e;
+  --winegrower-hover-bg: rgba(226, 138, 103, 0.08);
+  --winegrower-code-bg: rgba(226, 138, 103, 0.1);
+  --winegrower-blockquote-bg: rgba(226, 138, 103, 0.06);
+  --winegrower-tag-bg: rgba(226, 138, 103, 0.12);
+  --winegrower-drawer-bg: #22211e;
+  --winegrower-nav-bg: rgba(26, 25, 23, 0.92);
+
+  img {
+    opacity: 0.85;
+  }
+
+  a {
+    color: var(--winegrower-accent);
+    &:hover {
+      filter: brightness(1.2);
+    }
+  }
+
+  code:not([data-lang]) {
+    color: #e8a681 !important;
+  }
+
+  pre {
+    code:not([data-lang]) {
+      background: none;
+      color: #d1cec7 !important;
+    }
+    color: #d1cec7 !important;
+  }
+
+  table * {
+    color: #d1cec7;
+  }
+
+  .site-name a {
+    color: var(--winegrower-text);
+  }
+
+  .social-icons a {
+    background: #22211e;
+    color: var(--winegrower-social-text) !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    &:hover {
+      background: var(--winegrower-accent);
+      color: #fff !important;
+    }
+  }
+
+  .post {
+    .post-head-wrapper-text-only * {
+      color: var(--winegrower-text);
+    }
+    .post-head-wrapper .post-title {
+      background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.85) 100%);
+    }
+    .post-pagination a:not([href]) {
+      color: var(--winegrower-secondary);
+    }
+    .post-body p, h1, h2, h3, h4, h5, h6, li {
+      color: var(--winegrower-text);
+      *:not(a) { color: var(--winegrower-text); }
+    }
+  }
+
+  .post-list-container {
+    .post-item-wrapper {
+      &:hover {
+        background: var(--winegrower-hover-bg);
+      }
+    }
+    .post-item {
+      border-bottom-color: var(--winegrower-footer-border);
+    }
+  }
+
+  .sidebar-quote {
+    border-color: var(--winegrower-border);
+    p { color: var(--winegrower-secondary); }
+  }
+
+  .nav-link-item {
+    color: var(--winegrower-text);
+    &:hover {
+      background: var(--winegrower-hover-bg);
+      color: var(--winegrower-accent);
+    }
+    &.active {
+      background: var(--winegrower-border);
+      color: var(--winegrower-accent);
+    }
+  }
+
+  .toc {
+    background: var(--winegrower-blockquote-bg);
+    a { color: var(--winegrower-secondary); }
+    .toc-active { color: var(--winegrower-accent) !important; }
+    center { color: var(--winegrower-secondary); }
+  }
+
+  .tags .tag a {
+    background: var(--winegrower-tag-bg);
+    border-color: var(--winegrower-border);
+    color: var(--winegrower-accent);
+    &:hover {
+      background: var(--winegrower-accent);
+      color: #1a1917;
+    }
+  }
+
+  .extra-container {
+    .pagination-action { color: var(--winegrower-secondary); }
+    .pagination-indicator { color: var(--winegrower-secondary); }
+  }
+
+  .single-column-nav-container {
+    .navbar-brand { color: var(--winegrower-text); }
+    .nav-dropdown-toggle,
+    .nav-darkmode-toggle {
+      color: var(--winegrower-text);
+      &:hover { color: var(--winegrower-accent); background: var(--winegrower-hover-bg); }
+    }
+    .nav-background { background: var(--winegrower-bg); }
+  }
+
+  .single-column-header-container {
+    a { text-decoration: none; }
+    .single-column-header-title { color: var(--winegrower-text); }
+    .single-column-header-subtitle { color: var(--winegrower-secondary); }
+  }
+
+  .single-column-drawer-container {
+    .drawer-content {
+      background: #22211e;
+      .drawer-menu-item {
+        color: var(--winegrower-text);
+        &.active {
+          background: var(--winegrower-border);
+          color: var(--winegrower-accent);
+        }
+        &:hover {
+          background: var(--winegrower-hover-bg);
+          color: var(--winegrower-accent);
+        }
+      }
+      .toc {
+        background: var(--winegrower-blockquote-bg);
+      }
+    }
+  }
+
+  #single-column-footer {
+    color: var(--winegrower-secondary);
+  }
+
+  .pagination .pagination-action {
+    color: var(--winegrower-accent);
+    &:hover { background: var(--winegrower-hover-bg); }
+  }
+
+  .mobile-back-to-top {
+    background: var(--winegrower-accent) !important;
+    color: #1a1917 !important;
+  }
+
+  .site-footer p {
+    border-top-color: var(--winegrower-footer-border);
+    color: var(--winegrower-secondary);
+  }
+
+  .nav-footer {
+    color: var(--winegrower-secondary);
+  }
+
+  .section-title {
+    color: var(--winegrower-accent);
+    border-bottom-color: var(--winegrower-accent);
+  }
+
+  blockquote {
+    border-left-color: var(--winegrower-accent);
+    background: var(--winegrower-blockquote-bg);
+    * { color: var(--winegrower-secondary); }
+  }
+
+  .year {
+    color: var(--winegrower-accent);
+  }
+}

@@ -1,48 +1,74 @@
 ---
-title: "关于我"
-date: 1988-05-17T09:55:00+08:00
+title: "关于博主"
+date: 1988-05-17T09:09:00+08:00
 layout: "about"
-commentable: false
 ---
 
-你好！我是 **墨家**，这是我的个人博客。
+是一个来自农村的男孩，从小学 → 初中 → 高中 → 大学一步步走来，在家人和自己的努力下，从西部的一个小山村，来到了大都市。他经历过不同的社会，接触过不同的人群，学习了不同的知识，但由于他的悟性不足，努力不够，所以一直在路上。
 
-## 🧑‍💻 技术栈
-- 语言：中文, 英语
-- 工具：Cluade Code, Hermes Agent, Huawei
-- 兴趣：园艺、酒饮、历史、写作……
+这是他的博客，我将在这里记录他的所见所闻，所思所想，希望和大家多多交流~
 
-## 📫 联系方式
-- 邮箱：151858587@qq.com
-- 抖音：[@墨家]
-- 小红书：[@墨家](https://www.xiaohongshu.com/user/profile/681a8f89000000000601ed31)
-- 微信公众号：[@墨家]
+## 时光相册
 
-> “一个人的独白，也是与世界的对话。”
+### 1988 年
+出生 100 天后的自己
 
-## 📝 域名历史
+![出生100天后的自己](/images/about/baishitian.jpg)
 
-| Old Hoster                | New Hoster             | Month / Year           | Zone Date   | Transaction |
-|---------------------------|------------------------|------------------------|-------------|-------------|
-| HICHINA.COM               | DNSOWL.COM             | March 2022             | 2022-04-01  | Transfer    |
-| IIDNS.COM                 | HICHINA.COM            | March 2017             | 2017-04-01  | Transfer    |
-| N/A                       | IIDNS.COM              | September 2016         | 2016-10-01  | New         |
-| FOUNDATIONAPI.COM         | N/A                    | August 2016            | 2016-09-01  | Deleted     |
-| DNSPOD.NET                | FOUNDATIONAPI.COM      | July 2016              | 2016-08-01  | Transfer    |
-| N/A                       | DNSPOD.NET             | July 2015              | 2015-08-01  | New         |
-| DOMAINCONTROL.COM         | N/A                    | May 2015               | 2015-06-01  | Deleted     |
-| ZXQ.NET                   | DOMAINCONTROL.COM      | June 2012              | 2012-07-01  | Transfer    |
-| XINCACHE.COM              | ZXQ.NET                | March 2012             | 2012-04-01  | Transfer    |
-| XINNETDNS.COM             | XINCACHE.COM           | December 2011          | 2012-01-01  | Transfer    |
-| XINNET.CN                 | XINCACHE.COM           | December 2011          | 2012-01-01  | Transfer    |
-| N/A                       | XINNET.CN              | April 2011             | 2011-05-01  | New         |
-| N/A                       | XINNETDNS.COM          | April 2011             | 2011-05-01  | New         |
-| GEOTARGETING.INFO         | N/A                    | October 2010           | 2010-11-01  | Deleted     |
-| FASTPARK.NET              | GEOTARGETING.INFO      | August 2010            | 2010-09-01  | Transfer    |
-| N/A                       | FASTPARK.NET           | October 2009           | 2009-11-01  | New         |
-| RENEWYOURNAME.NET         | N/A                    | September 2009         | 2009-10-01  | Deleted     |
-| LUNARPAGES.COM            | RENEWYOURNAME.NET      | July 2009              | 2009-08-01  | Transfer    |
-| N/A                       | LUNARPAGES.COM         | July 2007              | 2007-08-01  | New         |
-| WHITELABELPARKED.COM      | N/A                    | December 2006          | 2007-01-01  | Deleted     |
-| HICHINA.COM               | WHITELABELPARKED.COM   | November 2006          | 2006-12-01  | Transfer    |
-| N/A                       | HICHINA.COM            | September-October 2001 | 2001-11-04  | New         |
+### 1993 年
+5 岁时的自己
+
+![5岁时的自己](/images/about/5sui.jpg)
+
+### 1998 年
+上小学时的自己
+
+![上小学时的自己](/images/about/xiaoxue.jpg)
+
+### 2009 年
+大学时的自己
+
+![大学时的自己](/images/about/daxue.jpg)
+
+### 2012 年
+大学毕业时的自己
+
+![大学毕业时的自己](/images/about/daxuebiye.jpg)
+
+### 2013 年
+酒庄工作时的自己
+
+![酒庄工作时的自己](/images/about/jiuzhuang.jpg)
+
+### 2015 年
+北漂时光
+
+![北漂时光](/images/about/beipiao.jpg)
+
+### 2016 年
+回老家订婚
+
+![回老家订婚](/images/about/dinghun.jpg)
+
+### 2017 年
+酿酒师的日常
+
+![酿酒师的日常](/images/about/niangjiushi.jpg)
+
+### 2019 年
+学校科研时光
+
+![学校科研时光](/images/about/keyan.jpg)
+
+### 2020 年
+自拍的证件照
+
+![自拍的证件照](/images/about/zhengjianzhao.jpg)
+
+### 2023 年
+
+![2023](/images/about/2023.jpg)
+
+### 2026 年
+
+![2026](/images/about/2026.jpg)

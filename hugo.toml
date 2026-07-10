@@ -1,18 +1,27 @@
-baseURL = "https://mojia.org/"
+baseURL = "https://winegrower.cn/"
 languageCode = "zh-CN"
-title = "墨家Mojia"
-theme = "hugo-theme-diary-main"
-
-[author]
-name = "mojia"
-email = "wineshe@qq.com"
+title = "winegrower"
+theme = "winegrower"
 
 [params]
-subtitle = "一个人的独白"
-description = "一个人的独白"
-enableGiscus = false
-disableDarkmode = false
-walineServer = "https://c.winegrower.cn/"
+  subtitle = "种葡萄并酿酒的人"
+  description = "种葡萄并酿酒的人"
+  enableOpenGraph = true
+  enableTwitterCards = true
+  disableDarkmode = false
+  favicon = "/favicon.ico"
+  startYear = "2008"
+  sidebarQuote = "种葡萄并酿酒的人"
+  enableReadingTime = true
+  walineServer = "https://c.winegrower.cn"
+
+  avatar = "/logo.png"
+  email = "wineshe@qq.com"
+  github = "https://github.com/YardenZhang"
+
+  [params.author]
+    name = "winegrower"
+    email = "wineshe@qq.com"
 
 [markup]
   [markup.highlight]
@@ -24,8 +33,6 @@ walineServer = "https://c.winegrower.cn/"
 [taxonomies]
   tag = "tags"
   category = "categories"
-
-
 
 [permalinks]
   posts = "/posts/:slug/"
@@ -48,6 +55,11 @@ walineServer = "https://c.winegrower.cn/"
   weight = 3
 
 [[menu.main]]
+  url = "/links"
+  name = "Links"
+  weight = 4
+
+[[menu.main]]
   url = "/about"
   name = "About"
-  weight = 4
+  weight = 5

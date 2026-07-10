@@ -1,0 +1,57 @@
+<header class="sidebar" id="sideContainer">
+    <div class="profile-card">
+        {{ if .Site.Params.avatar }}
+        <a class="image avatar" href="{{ "" | absLangURL }}">
+            <img src="{{ .Site.Params.avatar | absURL }}" alt="{{ .Site.Title }}" width="120" height="120">
+        </a>
+        {{ end }}
+
+        <h1 class="site-name">
+            <a href="{{ "" | absLangURL }}">{{ .Site.Title }}</a>
+        </h1>
+
+        {{ with .Site.Params.subtitle }}
+        <p class="site-subtitle">{{ . }}</p>
+        {{ end }}
+
+        {{ if or .Site.Params.email .Site.Params.author.email }}
+        <p class="site-email">{{ .Site.Params.email | default .Site.Params.author.email }}</p>
+        {{ end }}
+
+        <div class="social-icons">
+            {{ with .Site.Params.email }}<a href="mailto:{{ . }}" title="Email"><i class="fa-solid fa-envelope"></i></a>{{ end }}
+            {{ with .Site.Params.scholar }}<a href="{{ . }}" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>{{ end }}
+            {{ with .Site.Params.github }}<a href="{{ . }}" title="GitHub"><i class="fa-brands fa-github"></i></a>{{ end }}
+            {{ with .Site.Params.linkedin }}<a href="{{ . }}" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>{{ end }}
+            {{ with .Site.Params.twitter }}<a href="{{ . }}" title="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>{{ end }}
+            {{ with .Site.Params.orcid }}<a href="{{ . }}" title="ORCID"><i class="ai ai-orcid"></i></a>{{ end }}
+            {{ with .Site.Home.OutputFormats.Get "RSS" }}<a href="{{ .RelPermalink }}" title="RSS Feed"><i class="fa-solid fa-rss"></i></a>{{ end }}
+        </div>
+
+        <div class="nav-link-list">
+            {{ $current := .RelPermalink | absLangURL }}
+            {{ range .Site.Menus.main }}
+                {{ $actived := "false" }}
+                {{ if hasPrefix $current (.URL | absLangURL) }}
+                    {{ $actived = "active" }}
+                {{ end }}
+                <a class="nav-link-item {{ $actived }}" href="{{ .URL }}">
+                    {{ .Name }}
+                </a>
+            {{ end }}
+        </div>
+
+        {{ if .Site.Params.sidebarQuote }}
+        <div class="sidebar-quote">
+            <p>{{ .Site.Params.sidebarQuote }}</p>
+            {{ if .Site.Params.sidebarQuote2 }}
+            <p>{{ .Site.Params.sidebarQuote2 }}</p>
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+
+    <div class="nav-footer">
+        {{ partial "copyright.html" . }}
+    </div>
+</header>

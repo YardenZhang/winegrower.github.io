@@ -1,4 +1,4 @@
----
+﻿---
 title: "万网主机 解决wordpress无法发送邮件的问题"
 date: 2015-07-31
 slug: "2015年7月小记"
@@ -13,10 +13,12 @@ tags: ["WordPress", "万网", "SMTP"]
 1.用FTP打开 /wp-include/class-smtpp.php ,最好是下载下来,搜索一下,查找到如下的代码：
 
 ```
-$this->smtp_conn = @stream_socket_client(
-<!--more-->
-$host . ":" . $port,
+$this-
 
+<!--more-->
+
+>smtp_conn = @stream_socket_client(
+$host . ":" . $port,
 $errno,
 $errstr,
 $timeout,

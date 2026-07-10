@@ -8,10 +8,7 @@
                     <div class="post-item post-item-no-divider">
                         <div class="post-item-info-wrapper">
                             <div class="post-item-title">
-                                {{.Title}}
-                            </div>
-                            <div class="post-item-meta">
-                                {{ .Date.Format "2006-01-02" }}
+                                {{ .Title }}
                             </div>
                             <div class="post-item-summary">
                                 {{ if .Description }}
@@ -20,6 +17,7 @@
                                     {{ .Summary }}
                                 {{ end }}
                             </div>
+                            {{ partial "post-item-meta.html" . }}
                         </div>
                         {{ $featured_image := .Params.featured_image }}
                         {{ if $featured_image }}

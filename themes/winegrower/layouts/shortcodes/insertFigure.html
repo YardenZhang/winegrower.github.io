@@ -1,0 +1,10 @@
+{{- /* Image shortcode */ -}}
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" | default "Image" }}
+{{ $caption := .Get "caption" }}
+<figure class="insertFigure">
+    <img src="{{ $src }}" alt="{{ $alt }}" />
+    {{ with $caption }}
+    <figcaption>{{ . }}</figcaption>
+    {{ end }}
+</figure>

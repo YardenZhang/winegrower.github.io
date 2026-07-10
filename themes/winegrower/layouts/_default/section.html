@@ -1,0 +1,25 @@
+{{ define "main" }}
+    {{ if .Pages }}
+    <div class="post-list-container post-list-container-shadow">
+        {{ range .Paginator.Pages.GroupByDate "2006" }}
+        <div class="section">
+            <h2 class="section-title">{{ .Key }}</h2>
+        </div>
+        {{ range .Pages }}
+        <a href="{{ .RelPermalink }}" class="a-block">
+            <div class="post-item-wrapper">
+                <div class="post-item post-item-no-gaps">
+                    <div class="post-item-info-wrapper">
+                        <div class="post-item-title">
+                            {{ .Title }}
+                        </div>
+                        {{ partial "post-item-meta.html" . }}
+                    </div>
+                </div>
+            </div>
+        </a>
+        {{ end }}
+        {{ end }}
+    </div>
+    {{ end }}
+{{ end }}

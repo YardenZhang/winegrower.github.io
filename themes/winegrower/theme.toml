@@ -1,0 +1,22 @@
+name = "winegrower"
+license = "MIT"
+licenselink = "https://github.com/YardenZhang/hugo-theme-winegrower/blob/main/LICENSE"
+description = "A warm, minimal academic blog theme inspired by the Luka homepage template — combines clean typography, a profile-card sidebar, and a terracotta accent palette."
+homepage = "https://winegrower.cn/"
+tags = ["blog", "academic", "minimal", "responsive"]
+features = ["dark-mode", "mobile-first", "i18n", "giscus", "latex"]
+min_version = "0.59.0"
+
+[author]
+  name = "winegrower"
+  homepage = "https://winegrower.cn/"
+
+[original]
+  name = "Diary"
+  homepage = "https://amazingrise.net/"
+  repo = "https://github.com/amazingrise/hugo-theme-diary"
+
+[original.luka]
+  name = "Luka Homepage Template"
+  homepage = "https://github.com/wzsyyh/luka-homepage-template"
+  author = "Yuheng Yang"
