@@ -60,6 +60,6 @@ theme = "winegrower"
   weight = 4
 
 [[menu.main]]
-  url = "/about"
+  url = "/about/"
   name = "About"
   weight = 5
