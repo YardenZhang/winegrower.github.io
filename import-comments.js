@@ -159,7 +159,7 @@ for (const raw of rows) {
     const slug = slugMap[cid] || String(cid);
     const url = '/posts/' + slug + '/';
     const wStatus = status === 'approved' ? 'approved' : 'waiting';
-    const isOwner = authorId > 0 || mail === 'wineshe@qq.com' || mail === 'winegrower@foxmail.com';
+    const isOwner = authorId > 0 || mail === 'wineshe@qq.com' || mail === 'wineshe@qq.com';
     const userId = isOwner ? 1 : 0;
 
     stmt.run(text, link, mail, author, parent, parent, uaStr, url, ip,
