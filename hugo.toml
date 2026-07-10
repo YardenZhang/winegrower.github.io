@@ -16,12 +16,12 @@ theme = "winegrower"
   walineServer = "https://c.winegrower.cn"
 
   avatar = "/logo.png"
-  email = "wineshe@qq.com"
+  email = "winegrower@foxmail.com"
   github = "https://github.com/YardenZhang"
 
   [params.author]
     name = "winegrower"
-    email = "wineshe@qq.com"
+    email = "winegrower@foxmail.com"
 
 [markup]
   [markup.highlight]
