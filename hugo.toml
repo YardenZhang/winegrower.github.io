@@ -58,3 +58,8 @@ theme = "winegrower"
   url = "/links"
   name = "友情链接"
   weight = 4
+
+[[menu.main]]
+  url = "/shequ"
+  name = "酒社诗坛"
+  weight = 5
