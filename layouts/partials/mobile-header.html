@@ -21,9 +21,11 @@
                 </div>
                 {{ else }}
                 <!--<a class="a-block nav-link-item {{$actived}}" href="{{ .URL }}">-->
+                {{ if ne .URL "/links" }}
                 <a class="a-block drawer-menu-item {{ $actived }}" href="{{ .URL }}">
                     {{ .Name }}
                 </a>
+                {{ end }}
                 {{ end }}
             {{ end }}
             {{ if and (not (.Site.Params.disableToC) ) (.IsPage) }}
