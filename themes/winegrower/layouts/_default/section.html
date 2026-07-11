@@ -4,17 +4,17 @@
         {{ if eq .Section "posts" }}
             {{/* Year-based pagination: each page = one full year of posts */}}
             {{ $yearGroups := .RegularPages.GroupByDate "2006" "desc" }}
-            {{ $totalYears := len $yearGroups }}
-            {{ $pageNum := .Paginator.PageNumber }}
-            {{ $yearIndex := sub $pageNum 1 }}
-            {{ if ge $yearIndex $totalYears }}
-                {{ $yearIndex = sub $totalYears 1 }}
+            {{ $yearLeaders := slice }}
+            {{ range $yearGroups }}
+                {{ $yearLeaders = $yearLeaders | append (index .Pages 0) }}
             {{ end }}
-            {{ $currentYearGroup := index $yearGroups $yearIndex }}
+            {{ .Paginate $yearLeaders 1 }}
+            {{ $idx := sub .Paginator.PageNumber 1 }}
+            {{ $yearGroup := index $yearGroups $idx }}
             <div class="section">
-                <h2 class="section-title">{{ $currentYearGroup.Key }}</h2>
+                <h2 class="section-title">{{ $yearGroup.Key }}</h2>
             </div>
-            {{ range $currentYearGroup.Pages }}
+            {{ range $yearGroup.Pages }}
             <a href="{{ .RelPermalink }}" class="a-block">
                 <div class="post-item-wrapper">
                     <div class="post-item post-item-no-gaps">

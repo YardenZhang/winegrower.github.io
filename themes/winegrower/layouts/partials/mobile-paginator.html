@@ -1,30 +1,5 @@
 {{ if and (.Page.IsNode) (.Page.Paginator) (not (.Data.Terms)) }}
-{{ if eq .Section "posts" }}
-    {{/* Year-based pagination for posts section */}}
-    {{ $yearGroups := .RegularPages.GroupByDate "2006" "desc" }}
-    {{ $totalYears := len $yearGroups }}
-    {{ if and (le .Paginator.PageNumber $totalYears) (gt $totalYears 1) }}
-    <div class="pagination index-page">
-        <a class="pagination-action" {{ if .Paginator.HasPrev }} href="{{ .Paginator.Prev.URL }}">
-            {{ else }}
-            style="visibility:hidden">
-            {{ end }}
-            <span class="pagination-action-icon"><i class="fa-solid fa-chevron-left"></i></span>
-            <span>{{ i18n "prev_page" | default "Prev" }}</span>
-        </a>
-        <div class="pagination-indicator">
-            <span>{{ .Paginator.PageNumber }} / {{ $totalYears }}</span>
-        </div>
-        <a class="pagination-action" {{ if lt .Paginator.PageNumber $totalYears }} href="{{ .Paginator.Next.URL }}">
-            {{ else }}
-            style="visibility:hidden">
-            {{ end }}
-            <span>{{ i18n "next_page" | default "Next" }}</span>
-            <span class="pagination-action-icon"><i class="fa-solid fa-chevron-right"></i></span>
-        </a>
-    </div>
-    {{ end }}
-{{ else if gt .Paginator.TotalPages 1 }}
+{{ if gt .Paginator.TotalPages 1 }}
 <div class="pagination index-page">
     <a class="pagination-action" {{ if .Paginator.HasPrev }} href="{{ .Paginator.Prev.URL }}">
         {{ else }}
