@@ -1,4 +1,5 @@
 <header class="sidebar" id="sideContainer" data-pagefind-ignore>
+<style>@media(max-width:1080px){.nav-link-links-mobile-hide{display:none!important}}</style>
     <div class="profile-card">
         {{ if .Site.Params.avatar }}
         <a class="image avatar" href="{{ "" | absLangURL }}">
@@ -35,7 +36,7 @@
                 {{ if hasPrefix $current (.URL | absLangURL) }}
                     {{ $actived = "active" }}
                 {{ end }}
-                <a class="nav-link-item {{ $actived }}" href="{{ .URL }}">
+                <a class="nav-link-item {{ $actived }}{{ if eq .URL "/links" }} nav-link-links-mobile-hide{{ end }}" href="{{ .URL }}">
                     {{ .Name }}
                 </a>
             {{ end }}
