@@ -1,145 +1,234 @@
 <style>
-/* 覆盖主题 .post .post-body img 的 width: 100% !important */
-.links .link img,
-.friend-grid .friend-item img {
-    width: 32px !important;
-    height: 32px !important;
-    border-radius: 4px;
-    flex-shrink: 0;
-    object-fit: cover;
-    margin: 0 !important;
-}
-
-.friend-grid {
+/* 友链卡片样式 — 适配原 winegrower Typecho 主题的 links.padding.blur */
+.links.padding.blur {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 14px;
     padding: 0;
-    margin: 16px 0;
+    margin: 20px 0;
     list-style: none;
 }
 
-.friend-grid .friend-item {
+.links .link {
     list-style: none;
-    padding: 10px 15px;
-    background: var(--winegrower-blockquote-bg, rgba(194,113,79,0.05));
-    border-radius: 6px;
+    padding: 0;
+    margin: 0;
+}
+
+.links .link a {
     display: flex;
     align-items: center;
-    min-height: 52px;
+    gap: 14px;
+    padding: 14px 16px;
+    background: var(--winegrower-blockquote-bg, rgba(194,113,79,0.04));
+    border-radius: 8px;
+    text-decoration: none;
     transition: background-color 0.2s ease;
+    height: 100%;
 }
 
-.friend-grid .friend-item:hover {
+.links .link a:hover {
     background: var(--winegrower-hover-bg, rgba(194,113,79,0.08));
 }
 
-.friend-grid .friend-item a {
+.links .link img {
+    width: 52px !important;
+    height: 52px !important;
+    border-radius: 6px;
+    flex-shrink: 0;
+    object-fit: cover;
+    margin: 0 !important;
     display: block;
-    padding: 0 6px;
-    margin-left: 6px;
-    word-break: keep-all;
-    height: 32px;
-    overflow: hidden;
-    line-height: 32px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    flex: 1;
-    min-width: 0;
-    color: var(--winegrower-text, #3d3929);
-    font-size: 14px;
-    text-decoration: none;
 }
 
-.friend-grid .friend-item a:hover {
-    color: var(--winegrower-accent, #c2714f);
+.links .link .link-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.links .link .link-info h3 {
+    margin: 0 0 3px 0 !important;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--winegrower-text, #3d3929);
+    line-height: 1.3;
+}
+
+.links .link .link-info .lite-black {
+    display: block;
+    font-size: 12.5px;
+    color: var(--winegrower-secondary, #8c8a80);
+    line-height: 1.4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 /* Dark mode */
-body.night .friend-grid .friend-item {
-    background: var(--winegrower-blockquote-bg, rgba(226,138,103,0.06));
+body.night .links .link a {
+    background: var(--winegrower-blockquote-bg, rgba(226,138,103,0.05));
 }
-body.night .friend-grid .friend-item:hover {
+body.night .links .link a:hover {
     background: var(--winegrower-hover-bg, rgba(226,138,103,0.08));
 }
-body.night .friend-grid .friend-item a {
+body.night .links .link .link-info h3 {
     color: var(--winegrower-text, #d1cec7);
 }
-body.night .friend-grid .friend-item a:hover {
-    color: var(--winegrower-accent, #e28a67);
+body.night .links .link .link-info .lite-black {
+    color: var(--winegrower-secondary, #99978e);
 }
 </style>
 
-<ul class="friend-grid">
+<div class="links padding blur">
 
-    <li class="friend-item">
-        <img src="https://wineshe.oss-cn-shanghai.aliyuncs.com/winegrower/2025/12/22/xiaoyuanpng.png" alt="小院儿" loading="lazy" />
-        <a href="http://byhsu.com/" title="一位有才的女士，认真生活，认真写作的博主" target="_blank" rel="noopener">小院儿</a>
+    <li class="link">
+        <a href="http://byhsu.com/" title="一位有才的女士，认真生活，认真写作的博主" target="_blank">
+            <img src="https://wineshe.oss-cn-shanghai.aliyuncs.com/winegrower/2025/12/22/xiaoyuanpng.png" alt="小院儿" loading="lazy" />
+            <div class="link-info">
+                <h3>小院儿</h3>
+                <span class="lite-black">一位有才的女士，认真生活，认真写作的博主</span>
+            </div>
+        </a>
     </li>
 
-    <li class="friend-item">
-        <img src="https://wineshe.oss-cn-shanghai.aliyuncs.com/typecho/2022/03/22/8391fb097fff7eec5ff0a8877b94967b.png" alt="林海草原" loading="lazy" />
-        <a href="https://lhcy.org" title="愿我经历的苦难你不要经历，愿我已有的幸福你触手可及。" target="_blank" rel="noopener">林海草原</a>
+    <li class="link">
+        <a href="https://www.chenrui.com/" title="全科医生" target="_blank">
+            <img src="https://wineshe.oss-cn-shanghai.aliyuncs.com/typecho/2022/03/22/xiangshitan.png" alt="不可" loading="lazy" />
+            <div class="link-info">
+                <h3>不可</h3>
+                <span class="lite-black">全科医生</span>
+            </div>
+        </a>
     </li>
 
-    <li class="friend-item">
-        <img src="https://wineshe.oss-cn-shanghai.aliyuncs.com/typecho/2022/03/22/xiangshitan.png" alt="不可" loading="lazy" />
-        <a href="https://www.chenrui.com/" title="全科医生" target="_blank" rel="noopener">不可</a>
+    <li class="link">
+        <a href="http://yalanlife.net" title="岚女" target="_blank">
+            <img src="https://wineshe.oss-cn-shanghai.aliyuncs.com/typecho/2022/03/22/yal01.jpg" alt="雅岚" loading="lazy" />
+            <div class="link-info">
+                <h3>雅岚</h3>
+                <span class="lite-black">岚女</span>
+            </div>
+        </a>
     </li>
 
-    <li class="friend-item">
-        <img src="https://wineshe.oss-cn-shanghai.aliyuncs.com/typecho/2022/03/22/yal01.jpg" alt="雅岚" loading="lazy" />
-        <a href="http://yalanlife.net" title="岚女" target="_blank" rel="noopener">雅岚</a>
+    <li class="link">
+        <a href="https://2cat.net/" title="記錄貓魚日常生活同好玩趣事" target="_blank">
+            <img src="https://2cat.net/wp-content/uploads/2025/10/IMG_1738-300x300.jpeg" alt="貓魚" loading="lazy" />
+            <div class="link-info">
+                <h3>貓魚</h3>
+                <span class="lite-black">記錄貓魚日常生活同好玩趣事</span>
+            </div>
+        </a>
     </li>
 
-    <li class="friend-item">
-        <img src="https://2cat.net/wp-content/uploads/2025/10/IMG_1738-300x300.jpeg" alt="貓魚" loading="lazy" />
-        <a href="https://2cat.net/" title="記錄貓魚日常生活同好玩趣事" target="_blank" rel="noopener">貓魚</a>
+    <li class="link">
+        <a href="https://jame.work/" title="对酒当歌" target="_blank">
+            <img src="https://wineshe.oss-cn-shanghai.aliyuncs.com/winegrower/2026/07/07/jame.png" alt="Jame" loading="lazy" />
+            <div class="link-info">
+                <h3>Jame</h3>
+                <span class="lite-black">对酒当歌</span>
+            </div>
+        </a>
     </li>
 
-    <li class="friend-item">
-        <img src="https://cdn.xiaoten.com/friends/jame.ico" alt="Jame" loading="lazy" />
-        <a href="https://jame.work/" title="对酒当歌" target="_blank" rel="noopener">Jame</a>
+    <li class="link">
+        <a href="https://lhcy.org" title="愿我经历的苦难你不要经历，愿我已有的幸福你触手可及。" target="_blank">
+            <img src="https://wineshe.oss-cn-shanghai.aliyuncs.com/typecho/2022/03/22/8391fb097fff7eec5ff0a8877b94967b.png" alt="林海草原" loading="lazy" />
+            <div class="link-info">
+                <h3>林海草原</h3>
+                <span class="lite-black">愿我经历的苦难你不要经历，愿我已有的幸福你触手可及。</span>
+            </div>
+        </a>
     </li>
 
-    <li class="friend-item">
-        <img src="https://1900.live/logo.svg" alt="1900" loading="lazy" />
-        <a href="https://1900.live/" title="孤独的互联网冲浪大师" target="_blank" rel="noopener">1900</a>
+    <li class="link">
+        <a href="https://1900.live/" title="孤独的互联网冲浪大师" target="_blank">
+            <img src="https://1900.live/logo.svg" alt="1900" loading="lazy" />
+            <div class="link-info">
+                <h3>1900</h3>
+                <span class="lite-black">孤独的互联网冲浪大师</span>
+            </div>
+        </a>
     </li>
 
-    <li class="friend-item">
-        <img src="https://cuixiping.com/logo-cat.svg" alt="崔话记" loading="lazy" />
-        <a href="https://cuixiping.com/" title="崔话记" target="_blank" rel="noopener">崔话记</a>
+    <li class="link">
+        <a href="https://yljm.com/" title="记录日常生活点点滴滴" target="_blank">
+            <img src="https://wineshe.oss-cn-shanghai.aliyuncs.com/winegrower/2026/07/07/yljm.png" alt="依阑记梦" loading="lazy" />
+            <div class="link-info">
+                <h3>依阑记梦</h3>
+                <span class="lite-black">记录日常生活点点滴滴</span>
+            </div>
+        </a>
     </li>
 
-    <li class="friend-item">
-        <img src="https://hoadi1230.github.io/picx-images-hosting/my-personal-photo/20240607154007.1apcwgkldi.webp" alt="依阑记梦" loading="lazy" />
-        <a href="https://yljm.com/" title="依阑记梦" target="_blank" rel="noopener">依阑记梦</a>
+    <li class="link">
+        <a href="https://www.xiaoten.com/" title="调配电流、像素和代码的ISFP型导体。" target="_blank">
+            <img src="https://www.xiaoten.com/avatar.png" alt="小十" loading="lazy" />
+            <div class="link-info">
+                <h3>小十</h3>
+                <span class="lite-black">调配电流、像素和代码的ISFP型导体。</span>
+            </div>
+        </a>
     </li>
 
-    <li class="friend-item">
-        <img src="https://www.xiaoten.com/avatar.png" alt="小十" loading="lazy" />
-        <a href="https://www.xiaoten.com/" title="调配电流、像素和代码的ISFP型导体。" target="_blank" rel="noopener">小十</a>
+    <li class="link">
+        <a href="http://xhxh.cool/" title="福建泉州博友" target="_blank">
+            <img src="https://gravatar.cat.net/avatar/99c19c878e3b623e80732008ad95e5dd?s=40&r=G" alt="知影燕" loading="lazy" />
+            <div class="link-info">
+                <h3>知影燕</h3>
+                <span class="lite-black">福建泉州博友</span>
+            </div>
+        </a>
     </li>
 
-    <li class="friend-item">
-        <img src="https://gravatar.cat.net/avatar/99c19c878e3b623e80732008ad95e5dd?s=40&r=G" alt="知影燕" loading="lazy" />
-        <a href="http://xh.imlol.cn/" title="福建泉州博友" target="_blank" rel="noopener">知影燕</a>
+    <li class="link">
+        <a href="https://leixus.cn/" title="Leixus个人生活博客" target="_blank">
+            <img src="https://wineshe.oss-cn-shanghai.aliyuncs.com/winegrower/2026/07/07/lxen4.png" alt="印纪" loading="lazy" />
+            <div class="link-info">
+                <h3>印纪</h3>
+                <span class="lite-black">Leixus个人生活博客</span>
+            </div>
+        </a>
     </li>
 
-    <li class="friend-item">
-        <img src="https://leixus.cn/usr/themes/2024v1/img/logo.png" alt="印纪" loading="lazy" />
-        <a href="https://leixus.cn/" title="Leixus个人生活博客" target="_blank" rel="noopener">印纪</a>
+    <li class="link">
+        <a href="https://www.yhdzz.cn" title="小满的墨水瓶" target="_blank">
+            <img src="https://static.yhdzz.cn/imgs/xiaoman1221/512x512.png" alt="Xiaoman`s Ink" loading="lazy" />
+            <div class="link-info">
+                <h3>Xiaoman`s Ink</h3>
+                <span class="lite-black">小满的墨水瓶</span>
+            </div>
+        </a>
     </li>
 
-    <li class="friend-item">
-        <img src="https://static.yhdzz.cn/imgs/xiaoman1221/512x512.png" alt="Xiaoman`s Ink" loading="lazy" />
-        <a href="https://www.yhdzz.cn" title="小满的墨水瓶" target="_blank" rel="noopener">Xiaoman`s Ink</a>
+    <li class="link">
+        <a href="https://hanier.top/" title="一个喜欢旅行并记录生活的人" target="_blank">
+            <img src="https://veryjack.com/wp-content/uploads/2024/12/nanbeinan_avatar.webp" alt="阿航的生活志" loading="lazy" />
+            <div class="link-info">
+                <h3>阿航的生活志</h3>
+                <span class="lite-black">一个喜欢旅行并记录生活的人</span>
+            </div>
+        </a>
     </li>
 
-    <li class="friend-item">
-        <img src="https://veryjack.com/wp-content/uploads/2024/12/nanbeinan_avatar.webp" alt="阿航的生活志" loading="lazy" />
-        <a href="https://hanier.top/" title="一个喜欢旅行并记录生活的人" target="_blank" rel="noopener">阿航的生活志</a>
+    <li class="link">
+        <a href="https://cuixiping.com/" title="向着理想的方向，爬一会儿，躺一会儿" target="_blank">
+            <img src="https://cuixiping.com/logo-cat.svg" alt="崔话记" loading="lazy" />
+            <div class="link-info">
+                <h3>崔话记</h3>
+                <span class="lite-black">向着理想的方向，爬一会儿，躺一会儿</span>
+            </div>
+        </a>
     </li>
 
-</ul>
+    <li class="link">
+        <a href="https://yishu-life.com/" title="记录过往，期待在未来遇见更好的自己！" target="_blank">
+            <img src="https://yishu-life.com/Favicon.png" alt="树下语" loading="lazy" />
+            <div class="link-info">
+                <h3>树下语</h3>
+                <span class="lite-black">记录过往，期待在未来遇见更好的自己！</span>
+            </div>
+        </a>
+    </li>
+
+</div>
