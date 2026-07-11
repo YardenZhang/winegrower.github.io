@@ -8,7 +8,7 @@
             {{ range $yearGroups }}
                 {{ $yearLeaders = $yearLeaders | append (index .Pages 0) }}
             {{ end }}
-            {{ .Paginate $yearLeaders 1 }}
+            {{ $p := .Paginate $yearLeaders 1 }}
             {{ $idx := sub .Paginator.PageNumber 1 }}
             {{ $yearGroup := index $yearGroups $idx }}
             <div class="section">
